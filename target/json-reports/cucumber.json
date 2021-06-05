@@ -1,0 +1,760 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3643871000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.userShouldBeOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9768081000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate to the website \"https://gmibank.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/\"",
+                  "offset": 24
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.navigateToTheWebsite(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1906064000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "You should navigate to registration page",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.youShouldNavigateToRegistrationPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 556144000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on SSN textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.clickOnSSNTextbox()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-04T05:21:43.334Z",
+        "line": 14,
+        "name": "navigate to the register page and provide the ssn",
+        "description": "",
+        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn;data-test;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 653037000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Provide SSN \"345-34-4567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"345-34-4567\"",
+                  "offset": 12
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.provideSSN(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45009000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should not see the error message translation-not-found[Your SSN is required]",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.iShouldNotSeeTheErrorMessageTranslationNotFoundYourSSNIsRequired()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 922000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.userShouldBeOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1025924000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate to the website \"https://gmibank.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/\"",
+                  "offset": 24
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.navigateToTheWebsite(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 336675000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "You should navigate to registration page",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.youShouldNavigateToRegistrationPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73538000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on SSN textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.clickOnSSNTextbox()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-04T05:22:00.045Z",
+        "line": 15,
+        "name": "navigate to the register page and provide the ssn",
+        "description": "",
+        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn;data-test;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 164743000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Provide SSN \"213-34-6561\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"213-34-6561\"",
+                  "offset": 12
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.provideSSN(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9299000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should not see the error message translation-not-found[Your SSN is required]",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.iShouldNotSeeTheErrorMessageTranslationNotFoundYourSSNIsRequired()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1488000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.userShouldBeOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 644497000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate to the website \"https://gmibank.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/\"",
+                  "offset": 24
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.navigateToTheWebsite(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 319006000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "You should navigate to registration page",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.youShouldNavigateToRegistrationPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73652000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on SSN textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.clickOnSSNTextbox()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-04T05:22:01.688Z",
+        "line": 16,
+        "name": "navigate to the register page and provide the ssn",
+        "description": "",
+        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn;data-test;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 129936000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Provide SSN \"900-12-1231\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"900-12-1231\"",
+                  "offset": 12
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.provideSSN(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: No error. Test passed! expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:97)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\n\tat org.testng.Assert.assertEquals(Assert.java:118)\n\tat org.testng.Assert.assertEquals(Assert.java:751)\n\tat gmibank.stepdefinitions.gmibankSteps.iShouldNotSeeTheErrorMessageTranslationNotFoundYourSSNIsRequired(gmibankSteps.java:64)\n\tat ✽.I should not see the error message translation-not-found[Your SSN is required](file:///Users/coderman/Desktop/GMIBankFramework/src/test/resources/features/gmibank.feature:11)\n",
+              "duration": 45450000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "I should not see the error message translation-not-found[Your SSN is required]",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.iShouldNotSeeTheErrorMessageTranslationNotFoundYourSSNIsRequired()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1910000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.userShouldBeOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 792279000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate to the website \"https://gmibank.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/\"",
+                  "offset": 24
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.navigateToTheWebsite(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 281453000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "You should navigate to registration page",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.youShouldNavigateToRegistrationPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63768000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on SSN textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.clickOnSSNTextbox()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-04T05:22:02.950Z",
+        "line": 17,
+        "name": "navigate to the register page and provide the ssn",
+        "description": "",
+        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn;data-test;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 127860000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Provide SSN \"555-55-5555\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"555-55-5555\"",
+                  "offset": 12
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.provideSSN(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8277000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should not see the error message translation-not-found[Your SSN is required]",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.iShouldNotSeeTheErrorMessageTranslationNotFoundYourSSNIsRequired()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 389000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.userShouldBeOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 596081000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate to the website \"https://gmibank.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/\"",
+                  "offset": 24
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.navigateToTheWebsite(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 348649000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "You should navigate to registration page",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.youShouldNavigateToRegistrationPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65736000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on SSN textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.clickOnSSNTextbox()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-04T05:22:04.243Z",
+        "line": 24,
+        "name": "navigate to the register page and provide the ssn",
+        "description": "",
+        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn;invalid-ssn-test;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 131971000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Provide SSN \"999-12-1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"999-12-1234\"",
+                  "offset": 12
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.provideSSN(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62761000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should  see the ssn is invalid error message \"Ssn is invalid.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ssn is invalid.\"",
+                  "offset": 47
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.iShouldSeeTheSsnIsInvalidErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 392000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.userShouldBeOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 591851000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate to the website \"https://gmibank.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/\"",
+                  "offset": 24
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.navigateToTheWebsite(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 291670000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "You should navigate to registration page",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.youShouldNavigateToRegistrationPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77804000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on SSN textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.clickOnSSNTextbox()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-04T05:22:05.466Z",
+        "line": 25,
+        "name": "navigate to the register page and provide the ssn",
+        "description": "",
+        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn;invalid-ssn-test;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 132630000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Provide SSN \"000-12-1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"000-12-1234\"",
+                  "offset": 12
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.provideSSN(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35588000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should  see the ssn is invalid error message \"Ssn is invalid.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ssn is invalid.\"",
+                  "offset": 47
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.iShouldSeeTheSsnIsInvalidErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 241000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.userShouldBeOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 581643000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate to the website \"https://gmibank.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/\"",
+                  "offset": 24
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.navigateToTheWebsite(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 278146000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "You should navigate to registration page",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.youShouldNavigateToRegistrationPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65633000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on SSN textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.gmibankSteps.clickOnSSNTextbox()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-04T05:22:06.614Z",
+        "line": 28,
+        "name": "navigate to the register page and provide the ssn",
+        "description": "",
+        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 76994000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Provide SSN \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 12
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.provideSSN(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19394000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should see the Please enter your social security number error message \"Please enter your social security number.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please enter your social security number.\"",
+                  "offset": 72
+                }
+              ],
+              "location": "gmibank.stepdefinitions.gmibankSteps.iShouldSeeThePleaseEnterYourSocialSecurityNumberErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "navigate to the gmibank homepage",
+    "description": "",
+    "id": "navigate-to-the-gmibank-homepage",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/gmibank.feature",
+    "tags": []
+  }
+]

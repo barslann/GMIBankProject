@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="24.626">
+    <testcase classname="navigate to the gmibank homepage" name="navigate to the register page and provide the ssn" time="16.676">
+        <system-out>
+            <![CDATA[Given user should be on the homepage........................................passed
+When navigate to the website "https://gmibank.com/".........................passed
+And You should navigate to registration page................................passed
+And Click on SSN textbox....................................................passed
+And Provide SSN "345-34-4567"...............................................passed
+Then I should not see the error message translation-not-found[Your SSN is required].passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="navigate to the gmibank homepage" name="navigate to the register page and provide the ssn 2" time="1.625">
+        <system-out>
+            <![CDATA[Given user should be on the homepage........................................passed
+When navigate to the website "https://gmibank.com/".........................passed
+And You should navigate to registration page................................passed
+And Click on SSN textbox....................................................passed
+And Provide SSN "213-34-6561"...............................................passed
+Then I should not see the error message translation-not-found[Your SSN is required].passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="navigate to the gmibank homepage" name="navigate to the register page and provide the ssn 3" time="1.233">
+        <failure message="No error. Test passed! expected [true] but found [false]" type="java.lang.AssertionError">
+            <![CDATA[Given user should be on the homepage........................................passed
+When navigate to the website "https://gmibank.com/".........................passed
+And You should navigate to registration page................................passed
+And Click on SSN textbox....................................................passed
+And Provide SSN "900-12-1231"...............................................passed
+Then I should not see the error message translation-not-found[Your SSN is required].failed
+
+StackTrace:
+java.lang.AssertionError: No error. Test passed! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at gmibank.stepdefinitions.gmibankSteps.iShouldNotSeeTheErrorMessageTranslationNotFoundYourSSNIsRequired(gmibankSteps.java:64)
+	at ✽.I should not see the error message translation-not-found[Your SSN is required](file:///Users/coderman/Desktop/GMIBankFramework/src/test/resources/features/gmibank.feature:11)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="navigate to the gmibank homepage" name="navigate to the register page and provide the ssn 4" time="1.281">
+        <system-out>
+            <![CDATA[Given user should be on the homepage........................................passed
+When navigate to the website "https://gmibank.com/".........................passed
+And You should navigate to registration page................................passed
+And Click on SSN textbox....................................................passed
+And Provide SSN "555-55-5555"...............................................passed
+Then I should not see the error message translation-not-found[Your SSN is required].passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="navigate to the gmibank homepage" name="navigate to the register page and provide the ssn 5" time="1.215">
+        <system-out>
+            <![CDATA[Given user should be on the homepage........................................passed
+When navigate to the website "https://gmibank.com/".........................passed
+And You should navigate to registration page................................passed
+And Click on SSN textbox....................................................passed
+And Provide SSN "999-12-1234"...............................................passed
+Then I should  see the ssn is invalid error message "Ssn is invalid.".......passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="navigate to the gmibank homepage" name="navigate to the register page and provide the ssn 6" time="1.135">
+        <system-out>
+            <![CDATA[Given user should be on the homepage........................................passed
+When navigate to the website "https://gmibank.com/".........................passed
+And You should navigate to registration page................................passed
+And Click on SSN textbox....................................................passed
+And Provide SSN "000-12-1234"...............................................passed
+Then I should  see the ssn is invalid error message "Ssn is invalid.".......passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="navigate to the gmibank homepage" name="navigate to the register page and provide the ssn 7" time="1.025">
+        <system-out>
+            <![CDATA[Given user should be on the homepage........................................passed
+When navigate to the website "https://gmibank.com/".........................passed
+And You should navigate to registration page................................passed
+And Click on SSN textbox....................................................passed
+And Provide SSN ""..........................................................passed
+Then I should see the Please enter your social security number error message "Please enter your social security number.".passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
