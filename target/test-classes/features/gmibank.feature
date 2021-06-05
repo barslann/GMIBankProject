@@ -32,6 +32,7 @@ Feature: navigate to the gmibank homepage
     And Provide SSN ""
     Then I should see the Please enter your social security number error message "Please enter your social security number."
 
+
   Scenario Outline:  navigate to the register page and provide the firstname
     And Click on firstName textbox
     And Provide firstName "<FirstName>"
@@ -40,6 +41,26 @@ Feature: navigate to the gmibank homepage
       |FirstName|
       |Ahmet|
       |Fatma|
+
+  Scenario:  navigate to the register page and provide the firstname
+    And Click on firstName textbox
+    And Provide firstName ""
+    Then I should see the error "Please enter your first name."
+
+  Scenario Outline:  navigate to the register page and provide the firstname
+    And Click on firstName textbox
+    And Provide invalid firstName "<FirstName>"
+    Then I should see the error "FirstName is invalid"
+    Examples: Invalid FirstNames
+      |FirstName|
+      |Ahmet123|
+      |Fa123tma|
+      |Bu?se-|
+      |12345|
+
+
+
+
 
 
 

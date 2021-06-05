@@ -32,8 +32,10 @@ public class MainPage {
     @FindBy(id = "firstname")
     public WebElement firstNameTextBox;
 
-    @FindBy(xpath = "//*[text()='Please enter your first name.']")
+    @FindBy(xpath = "//input[@id='firstname']//following-sibling::div[@class='invalid-feedback']")
     public WebElement firstNameErrorLabel;
+
+
 
 
 

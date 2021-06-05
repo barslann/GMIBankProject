@@ -94,14 +94,39 @@ public class gmibankSteps{
     @And("Provide firstName {string}")
     public void provideFirstName(String firstName) {
         mainPage.firstNameTextBox.sendKeys(firstName);
+        mainPage.firstNameTextBox.sendKeys(Keys.ENTER);
     }
 
     @Then("I should not see any error")
     public void iShouldNotSeeAnyError() {
-        Assert.assertFalse(mainPage.firstNameErrorLabel.isDisplayed());
+        String classAttrText =  mainPage.firstNameTextBox.getAttribute("class");
+        Assert.assertFalse(classAttrText.contains("invalid"));
     }
 
 
+    @Then("I should see the error {string}")
+    public void iShouldSeeTheError(String firstNameErrorMessage) {
+        String webFirstNameError =mainPage.firstNameErrorLabel.getText();
+        Assert.assertEquals(firstNameErrorMessage, webFirstNameError);
+    }
+
+    @And("Provide invalid firstName {string}")
+    public void provideInvalidFirstName(String invalidFirstName) {
+        mainPage.firstNameTextBox.sendKeys(invalidFirstName);
+
+
+        boolean containsSpecialCharacter = false;
+
+        for(char chr : invalidFirstName.toCharArray()){
+            if(!Character.isLetter(chr)){
+                containsSpecialCharacter = true;
+                break;
+            }
+        }
+
+        Assert.assertFalse(containsSpecialCharacter);
+
+    }
 }
 /*
 *  hello + 10 + 20  -> hello1020
