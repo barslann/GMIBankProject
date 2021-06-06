@@ -26,8 +26,9 @@ public class CustomerCreationStepDefinitions {
     Faker faker = new Faker();
 
     @Given("user should be on the homepage {string}")
-    public void userShouldBeOnTheHomepage(String url) {
+    public void userShouldBeOnTheHomepage(String url) throws InterruptedException {
         Driver.get().get(ConfigurationReader.getProperty(url));
+        Thread.sleep(3000);
     }
 
     @When("user navigates to register page")

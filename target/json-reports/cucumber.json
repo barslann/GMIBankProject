@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14252968000,
+              "duration": 18912247000,
               "status": "passed"
             },
             "line": 4,
@@ -26,222 +26,204 @@
               "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2219646000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user navigates to register page",
-            "match": {
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userNavigatesToRegisterPage()"
-            },
-            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2021-06-06T00:23:49.241Z",
-        "line": 21,
-        "name": "Customer creation",
+        "start_timestamp": "2021-06-06T23:15:49.379Z",
+        "line": 33,
+        "name": "admin sign in",
         "description": "",
-        "id": "end-to-end-test;customer-creation;valid-user-creation-credentials;2",
+        "id": "end-to-end-test;admin-sign-in;admin-sign-in-data;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 993713000,
+              "duration": 2069685000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User provide SSN \"123-12-1218\"",
+            "line": 26,
+            "name": "admin navigates to sign in page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"123-12-1218\"",
-                  "offset": 17
-                }
-              ],
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideSSN(java.lang.String)"
+              "location": "gmibank.stepdefinitions.adminSignInStepDefinitions.adminNavigatesToSignInPage()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 121572000,
+              "duration": 502398000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User provide firstName \"Esra\"",
+            "line": 27,
+            "name": "admin enter username \"laurine.wiza\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Esra\"",
-                  "offset": 23
-                }
-              ],
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideFirstName(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 121881000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User provide lastName \"sdljf\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sdljf\"",
-                  "offset": 22
-                }
-              ],
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideLastName(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 277159000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User provide address \"123 5th aven\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"123 5th aven\"",
+                  "val": "\"laurine.wiza\"",
                   "offset": 21
                 }
               ],
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideAddress(java.lang.String)"
+              "location": "gmibank.stepdefinitions.adminSignInStepDefinitions.adminEnterUsername(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 204428000,
+              "duration": 310187000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "User provide phoneNumber \"123-456-7890\"",
+            "line": 28,
+            "name": "admin enter password \"a1STEM!ilg%!0C\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"123-456-7890\"",
-                  "offset": 25
+                  "val": "\"a1STEM!ilg%!0C\"",
+                  "offset": 21
                 }
               ],
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvidePhoneNumber(java.lang.String)"
+              "location": "gmibank.stepdefinitions.adminSignInStepDefinitions.adminEnterPassword(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 85613000,
+              "duration": 3425841000,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User provide userName \"test1\"",
+            "line": 29,
+            "name": "admin clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.adminSignInStepDefinitions.adminClicksSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 56649000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "admin should be on the home page with \"Tommie Runolfsson\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"test1\"",
-                  "offset": 22
+                  "val": "\"Tommie Runolfsson\"",
+                  "offset": 38
                 }
               ],
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideUserName(java.lang.String)"
+              "location": "gmibank.stepdefinitions.adminSignInStepDefinitions.adminShouldBeOnTheHomePageWith(java.lang.String)"
             },
             "keyword": "Then "
-          },
+          }
+        ],
+        "tags": [
+          {
+            "name": "@adminSignIn"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigates to register page of gmi bank application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
           {
             "result": {
-              "duration": 204556000,
+              "duration": 4198344000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "User provide email \"test1@gmail.com\"",
+            "line": 4,
+            "name": "user should be on the homepage \"homepage_url\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"test1@gmail.com\"",
-                  "offset": 19
+                  "val": "\"homepage_url\"",
+                  "offset": 31
                 }
               ],
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideEmail(java.lang.String)"
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
             },
-            "keyword": "Then "
-          },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-06T23:16:14.820Z",
+        "line": 36,
+        "name": "Admin activates user",
+        "description": "",
+        "id": "end-to-end-test;admin-activates-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 323318000,
+              "duration": 138231000,
               "status": "passed"
             },
-            "line": 15,
-            "name": "User provide newPassword \"Asdf123?\"",
+            "line": 37,
+            "name": "admin clicks the administration menu",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Asdf123?\"",
-                  "offset": 25
-                }
-              ],
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideNewPassword(java.lang.String)"
+              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminClicksTheAdministrationMenu()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 151669000,
+              "duration": 2173643000,
               "status": "passed"
             },
-            "line": 16,
-            "name": "User provide newPasswordConfirmation \"Asdf123?\"",
+            "line": 38,
+            "name": "admin clicks user management option",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Asdf123?\"",
-                  "offset": 37
-                }
-              ],
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideNewPasswordConfirmation(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 799468000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User clicks register button",
-            "match": {
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userClicksRegisterButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: expected [Registration saved!  Please check your email for confirmation.] but found [[[ChromeDriver: chrome on MAC (e0898d8e0e7aadd3b16cda409161f6b4)] -\u003e xpath: //div[@class\u003d\u0027Toastify__toast-body\u0027]]]\n\tat org.testng.Assert.fail(Assert.java:97)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\n\tat org.testng.Assert.assertEquals(Assert.java:118)\n\tat org.testng.Assert.assertEquals(Assert.java:563)\n\tat gmibank.stepdefinitions.CustomerCreationStepDefinitions.userSuccessfulMessageShouldBeSeen(CustomerCreationStepDefinitions.java:88)\n\tat ✽.User successful message should be seen \"Registration saved!  Please check your email for confirmation.\"(file:///Users/coderman/Desktop/GMIBankFramework/src/test/resources/features/endtoend.feature:18)\n",
-              "duration": 35870000,
-              "status": "failed"
-            },
-            "line": 18,
-            "name": "User successful message should be seen \"Registration saved!  Please check your email for confirmation.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Registration saved!  Please check your email for confirmation.\"",
-                  "offset": 39
-                }
-              ],
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userSuccessfulMessageShouldBeSeen(java.lang.String)"
+              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminClicksUserManagementOption()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 667487000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "admin click created date to sort the users",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminClickCreatedDateToSortTheUsers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2482783000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "admin finds user and clicks deactivate button",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminFindsUserAndClicksDeactivateButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\"sdf\"]//following-sibling::td[2]/button/span\"}\n  (Session info: chrome\u003d91.0.4472.77)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Bekirs-MacBook-Pro.local\u0027, ip: \u00272600:6c4e:b3f:3104:18d2:3dd4:e2ae:f227%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u002711.0.10\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: /var/folders/6g/xtc8jt7n5yj...}, goog:chromeOptions: {debuggerAddress: localhost:60447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ca810522f5fb844f6de0e48fda91dade\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\"sdf\"]//following-sibling::td[2]/button/span}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy18.getText(Unknown Source)\n\tat gmibank.stepdefinitions.UserActivationStepDefinitions.userShouldBeActivated(UserActivationStepDefinitions.java:38)\n\tat ✽.user should be activated(file:///Users/coderman/Desktop/GMIBankFramework/src/test/resources/features/endtoend.feature:41)\n",
+              "duration": 10123852000,
+              "status": "failed"
+            },
+            "line": 41,
+            "name": "user should be activated",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.userShouldBeActivated()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@adminSignIn"
           }
         ]
       }
@@ -251,1123 +233,6 @@
     "id": "end-to-end-test",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/endtoend.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 141000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1106000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.300Z",
-        "line": 15,
-        "name": "navigate to the register page and provide the ssn",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn;data-test;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 148000,
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "Click on SSN textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 39000,
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "Provide SSN \"345-34-4567\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32000,
-              "status": "skipped"
-            },
-            "line": 12,
-            "name": "I should not see the error message translation-not-found[Your SSN is required]",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 47000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 33000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.349Z",
-        "line": 16,
-        "name": "navigate to the register page and provide the ssn",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn;data-test;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 30000,
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "Click on SSN textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 97000,
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "Provide SSN \"213-34-6561\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 147000,
-              "status": "skipped"
-            },
-            "line": 12,
-            "name": "I should not see the error message translation-not-found[Your SSN is required]",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 43000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 202000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.376Z",
-        "line": 17,
-        "name": "navigate to the register page and provide the ssn",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn;data-test;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 108000,
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "Click on SSN textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 131000,
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "Provide SSN \"800-12-1231\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 614000,
-              "status": "skipped"
-            },
-            "line": 12,
-            "name": "I should not see the error message translation-not-found[Your SSN is required]",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 236000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 46000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.402Z",
-        "line": 18,
-        "name": "navigate to the register page and provide the ssn",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn;data-test;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 30000,
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "Click on SSN textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 44000,
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "Provide SSN \"555-55-5555\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 26000,
-              "status": "skipped"
-            },
-            "line": 12,
-            "name": "I should not see the error message translation-not-found[Your SSN is required]",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 32000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 46000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.425Z",
-        "line": 26,
-        "name": "navigate to the register page and provide the ssn",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn;invalid-ssn-test;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 27000,
-              "status": "skipped"
-            },
-            "line": 21,
-            "name": "Click on SSN textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 37000,
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "Provide SSN \"999-12-1234\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30000,
-              "status": "skipped"
-            },
-            "line": 23,
-            "name": "I should  see the ssn is invalid error message \"Ssn is invalid.\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 28000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 26000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.441Z",
-        "line": 27,
-        "name": "navigate to the register page and provide the ssn",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn;invalid-ssn-test;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 24000,
-              "status": "skipped"
-            },
-            "line": 21,
-            "name": "Click on SSN textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29000,
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "Provide SSN \"000-12-1234\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 247000,
-              "status": "skipped"
-            },
-            "line": 23,
-            "name": "I should  see the ssn is invalid error message \"Ssn is invalid.\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 621000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 180000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.463Z",
-        "line": 30,
-        "name": "navigate to the register page and provide the ssn",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-ssn",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 69000,
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "Click on SSN textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 26000,
-              "status": "skipped"
-            },
-            "line": 32,
-            "name": "Provide SSN \"\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 27000,
-              "status": "skipped"
-            },
-            "line": 33,
-            "name": "I should see the Please enter your social security number error message \"Please enter your social security number.\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 44000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 25000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.483Z",
-        "line": 42,
-        "name": "navigate to the register page and provide the firstname",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-firstname;invalid-ssn-test;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 23000,
-              "status": "skipped"
-            },
-            "line": 37,
-            "name": "Click on firstName textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 26000,
-              "status": "skipped"
-            },
-            "line": 38,
-            "name": "Provide firstName \"Ahmet\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 22000,
-              "status": "skipped"
-            },
-            "line": 39,
-            "name": "I should not see any error",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 41000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 27000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.499Z",
-        "line": 43,
-        "name": "navigate to the register page and provide the firstname",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-firstname;invalid-ssn-test;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 24000,
-              "status": "skipped"
-            },
-            "line": 37,
-            "name": "Click on firstName textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 22000,
-              "status": "skipped"
-            },
-            "line": 38,
-            "name": "Provide firstName \"Fatma\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 21000,
-              "status": "skipped"
-            },
-            "line": 39,
-            "name": "I should not see any error",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 46000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 23000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.528Z",
-        "line": 45,
-        "name": "navigate to the register page and provide the firstname",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-firstname",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 44000,
-              "status": "skipped"
-            },
-            "line": 46,
-            "name": "Click on firstName textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 25000,
-              "status": "skipped"
-            },
-            "line": 47,
-            "name": "Provide firstName \"\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 23000,
-              "status": "skipped"
-            },
-            "line": 48,
-            "name": "I should see the error \"Please enter your first name.\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 44000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 25000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.544Z",
-        "line": 56,
-        "name": "navigate to the register page and provide the firstname",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-firstname;invalid-firstnames;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 81000,
-              "status": "skipped"
-            },
-            "line": 51,
-            "name": "Click on firstName textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29000,
-              "status": "skipped"
-            },
-            "line": 52,
-            "name": "Provide invalid firstName \"Ahmet123\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 24000,
-              "status": "skipped"
-            },
-            "line": 53,
-            "name": "I should see the error \"FirstName is invalid\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 431000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2235000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.556Z",
-        "line": 57,
-        "name": "navigate to the register page and provide the firstname",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-firstname;invalid-firstnames;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 206000,
-              "status": "skipped"
-            },
-            "line": 51,
-            "name": "Click on firstName textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29000,
-              "status": "skipped"
-            },
-            "line": 52,
-            "name": "Provide invalid firstName \"Fa123tma\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 22000,
-              "status": "skipped"
-            },
-            "line": 53,
-            "name": "I should see the error \"FirstName is invalid\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 56000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 25000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.569Z",
-        "line": 58,
-        "name": "navigate to the register page and provide the firstname",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-firstname;invalid-firstnames;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 23000,
-              "status": "skipped"
-            },
-            "line": 51,
-            "name": "Click on firstName textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 20000,
-              "status": "skipped"
-            },
-            "line": 52,
-            "name": "Provide invalid firstName \"Bu?se-\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 23000,
-              "status": "skipped"
-            },
-            "line": 53,
-            "name": "I should see the error \"FirstName is invalid\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user should be on the homepage",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 42000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "navigate to the website \"https://gmibank.com/\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 22000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "You should navigate to registration page",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-06T00:24:09.584Z",
-        "line": 59,
-        "name": "navigate to the register page and provide the firstname",
-        "description": "",
-        "id": "navigate-to-the-gmibank-homepage;navigate-to-the-register-page-and-provide-the-firstname;invalid-firstnames;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 21000,
-              "status": "skipped"
-            },
-            "line": 51,
-            "name": "Click on firstName textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 19000,
-              "status": "skipped"
-            },
-            "line": 52,
-            "name": "Provide invalid firstName \"12345\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 19000,
-              "status": "skipped"
-            },
-            "line": 53,
-            "name": "I should see the error \"FirstName is invalid\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "navigate to the gmibank homepage",
-    "description": "",
-    "id": "navigate-to-the-gmibank-homepage",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/gmibank.feature",
     "tags": []
   }
 ]

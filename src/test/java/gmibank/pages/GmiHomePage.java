@@ -18,4 +18,14 @@ public class GmiHomePage {
     //    @FindBy(xpath = "(//a[@class='dropdown-item'])[2]")
     @FindBy(xpath = "(//span[text()='Register'])[1]")
     public WebElement register;
+
+//    @FindBy(id = "login-item")
+    @FindBy(xpath = "(//span[text()='Sign in'])[1]")
+    public WebElement singIn;
+
+    @FindBy(xpath = "//*[text()=\"Tommie Runolfsson\"]")
+    public WebElement adminName;
+
+
+
 }
