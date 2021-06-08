@@ -23,8 +23,12 @@ public class GmiHomePage {
     @FindBy(xpath = "(//span[text()='Sign in'])[1]")
     public WebElement singIn;
 
-    @FindBy(xpath = "//*[text()=\"Tommie Runolfsson\"]")
-    public WebElement adminName;
+//    @FindBy(xpath = "//*[text()=\"Tommie Runolfsson\"]")
+    @FindBy(id="account-menu")
+    public WebElement userName;
+
+    @FindBy(xpath = "//a[@href=\"/logout\"]")
+    public WebElement logOutOption;
 
 
 

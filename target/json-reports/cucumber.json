@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18912247000,
+              "duration": 19912472000,
               "status": "passed"
             },
             "line": 4,
@@ -30,96 +30,96 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-06T23:15:49.379Z",
-        "line": 33,
-        "name": "admin sign in",
+        "start_timestamp": "2021-06-08T06:25:36.548Z",
+        "line": 34,
+        "name": "user sign in",
         "description": "",
-        "id": "end-to-end-test;admin-sign-in;admin-sign-in-data;2",
+        "id": "end-to-end-test;user-sign-in;user-sign-in-data;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2069685000,
+              "duration": 2162301000,
               "status": "passed"
             },
-            "line": 26,
-            "name": "admin navigates to sign in page",
+            "line": 27,
+            "name": "user navigates to sign in page",
             "match": {
-              "location": "gmibank.stepdefinitions.adminSignInStepDefinitions.adminNavigatesToSignInPage()"
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userNavigatesToSignInPage()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 502398000,
+              "duration": 542670000,
               "status": "passed"
             },
-            "line": 27,
-            "name": "admin enter username \"laurine.wiza\"",
+            "line": 28,
+            "name": "user enter username \"laurine.wiza\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"laurine.wiza\"",
-                  "offset": 21
+                  "offset": 20
                 }
               ],
-              "location": "gmibank.stepdefinitions.adminSignInStepDefinitions.adminEnterUsername(java.lang.String)"
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userEnterUsername(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 310187000,
+              "duration": 318398000,
               "status": "passed"
             },
-            "line": 28,
-            "name": "admin enter password \"a1STEM!ilg%!0C\"",
+            "line": 29,
+            "name": "user enter password \"a1STEM!ilg%!0C\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"a1STEM!ilg%!0C\"",
-                  "offset": 21
+                  "offset": 20
                 }
               ],
-              "location": "gmibank.stepdefinitions.adminSignInStepDefinitions.adminEnterPassword(java.lang.String)"
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userEnterPassword(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3425841000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "admin clicks sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.adminSignInStepDefinitions.adminClicksSignInButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 56649000,
+              "duration": 3399235000,
               "status": "passed"
             },
             "line": 30,
-            "name": "admin should be on the home page with \"Tommie Runolfsson\"",
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userClicksSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54197000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user should be on the home page with \"Tommie Runolfsson\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"Tommie Runolfsson\"",
-                  "offset": 38
+                  "offset": 37
                 }
               ],
-              "location": "gmibank.stepdefinitions.adminSignInStepDefinitions.adminShouldBeOnTheHomePageWith(java.lang.String)"
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userShouldBeOnTheHomePageWith(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@adminSignIn"
+            "name": "@SignIn"
           }
         ]
       },
@@ -132,7 +132,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4198344000,
+              "duration": 4339148000,
               "status": "passed"
             },
             "line": 4,
@@ -151,8 +151,8 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-06T23:16:14.820Z",
-        "line": 36,
+        "start_timestamp": "2021-06-08T06:26:03.103Z",
+        "line": 37,
         "name": "Admin activates user",
         "description": "",
         "id": "end-to-end-test;admin-activates-user",
@@ -161,10 +161,10 @@
         "steps": [
           {
             "result": {
-              "duration": 138231000,
+              "duration": 256916000,
               "status": "passed"
             },
-            "line": 37,
+            "line": 38,
             "name": "admin clicks the administration menu",
             "match": {
               "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminClicksTheAdministrationMenu()"
@@ -173,10 +173,10 @@
           },
           {
             "result": {
-              "duration": 2173643000,
+              "duration": 2172723000,
               "status": "passed"
             },
-            "line": 38,
+            "line": 39,
             "name": "admin clicks user management option",
             "match": {
               "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminClicksUserManagementOption()"
@@ -185,10 +185,10 @@
           },
           {
             "result": {
-              "duration": 667487000,
+              "duration": 649460000,
               "status": "passed"
             },
-            "line": 39,
+            "line": 40,
             "name": "admin click created date to sort the users",
             "match": {
               "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminClickCreatedDateToSortTheUsers()"
@@ -197,10 +197,10 @@
           },
           {
             "result": {
-              "duration": 2482783000,
+              "duration": 2496879000,
               "status": "passed"
             },
-            "line": 40,
+            "line": 41,
             "name": "admin finds user and clicks deactivate button",
             "match": {
               "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminFindsUserAndClicksDeactivateButton()"
@@ -209,21 +209,32 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\"sdf\"]//following-sibling::td[2]/button/span\"}\n  (Session info: chrome\u003d91.0.4472.77)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Bekirs-MacBook-Pro.local\u0027, ip: \u00272600:6c4e:b3f:3104:18d2:3dd4:e2ae:f227%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u002711.0.10\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: /var/folders/6g/xtc8jt7n5yj...}, goog:chromeOptions: {debuggerAddress: localhost:60447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ca810522f5fb844f6de0e48fda91dade\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\"sdf\"]//following-sibling::td[2]/button/span}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy18.getText(Unknown Source)\n\tat gmibank.stepdefinitions.UserActivationStepDefinitions.userShouldBeActivated(UserActivationStepDefinitions.java:38)\n\tat ✽.user should be activated(file:///Users/coderman/Desktop/GMIBankFramework/src/test/resources/features/endtoend.feature:41)\n",
-              "duration": 10123852000,
-              "status": "failed"
+              "duration": 386000,
+              "status": "passed"
             },
-            "line": 41,
+            "line": 42,
             "name": "user should be activated",
             "match": {
               "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.userShouldBeActivated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 347701000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "admin should log out",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminShouldLogOut()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@adminSignIn"
+            "name": "@SignIn"
           }
         ]
       }
