@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="45.64">
-    <testcase classname="end-to-end test" name="admin sign in" time="25.411">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="38.658">
+    <testcase classname="end-to-end test" name="admin sign in" time="18.971">
         <system-out>
             <![CDATA[Given user should be on the homepage "homepage_url".........................passed
 When admin navigates to sign in page........................................passed
@@ -11,8 +11,8 @@ Then admin should be on the home page with "Tommie Runolfsson"..............pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="end-to-end test" name="Admin activates user" time="19.808">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&quot;sdf&quot;]//following-sibling::td[2]/button/span&quot;}&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Bekirs-MacBook-Pro.local', ip: '2600:6c4e:b3f:3104:18d2:3dd4:e2ae:f227%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: /var/folders/6g/xtc8jt7n5yj...}, goog:chromeOptions: {debuggerAddress: localhost:60447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ca810522f5fb844f6de0e48fda91dade&#10;*** Element info: {Using=xpath, value=//*[text()=&quot;sdf&quot;]//following-sibling::td[2]/button/span}" type="org.openqa.selenium.NoSuchElementException">
+    <testcase classname="end-to-end test" name="Admin activates user" time="19.25">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&quot;sdf&quot;]//following-sibling::td[2]/button/span&quot;}&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-ADFSGOQ', ip: '192.168.119.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\gokhan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 48eedd35e51df747cd449cdc8f99d292&#10;*** Element info: {Using=xpath, value=//*[text()=&quot;sdf&quot;]//following-sibling::td[2]/button/span}" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given user should be on the homepage "homepage_url".........................passed
 When admin clicks the administration menu...................................passed
 And admin clicks user management option.....................................passed
@@ -25,10 +25,10 @@ org.openqa.selenium.NoSuchElementException: no such element: Unable to locate el
   (Session info: chrome=91.0.4472.77)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Bekirs-MacBook-Pro.local', ip: '2600:6c4e:b3f:3104:18d2:3dd4:e2ae:f227%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'
+System info: host: 'DESKTOP-ADFSGOQ', ip: '192.168.119.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: /var/folders/6g/xtc8jt7n5yj...}, goog:chromeOptions: {debuggerAddress: localhost:60447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ca810522f5fb844f6de0e48fda91dade
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\gokhan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 48eedd35e51df747cd449cdc8f99d292
 *** Element info: {Using=xpath, value=//*[text()="sdf"]//following-sibling::td[2]/button/span}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -48,7 +48,7 @@ Session ID: ca810522f5fb844f6de0e48fda91dade
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy18.getText(Unknown Source)
 	at gmibank.stepdefinitions.UserActivationStepDefinitions.userShouldBeActivated(UserActivationStepDefinitions.java:38)
-	at ✽.user should be activated(file:///Users/coderman/Desktop/GMIBankFramework/src/test/resources/features/endtoend.feature:41)
+	at ✽.user should be activated(file:///M:/BackupPageObject/GMIBankProject/src/test/resources/features/endtoend.feature:41)
 ]]>
         </failure>
     </testcase>
