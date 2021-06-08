@@ -21,6 +21,7 @@ Feature: end-to-end test
     |SSN| firstName|lastName|address|phoneNumber|userName|email|newPassword|newPasswordConfirmation|
     |123-12-1241|Esra|sdljf  |123 5th aven| 123-456-7890|test1|test1@gmail.com|Asdf123?|Asdf123?    |
 
+#    change naming convention.
   @adminSignIn
   Scenario Outline: admin sign in
     When admin navigates to sign in page
@@ -39,6 +40,24 @@ Feature: end-to-end test
       And admin click created date to sort the users
       And admin finds user and clicks deactivate button
       Then user should be activated
+
+
+#  @SignIn
+#  Scenario Outline: user sign in
+#    When user navigates to sign in page
+#    Then user enter username "<username>"
+#    Then user enter password "<password>"
+#    Then user clicks sign in button
+#    Then user should be on the home page with "<adminName>"
+#    Examples: user sign in data
+#      |username| password|adminName|
+#      |laurine.wiza| a1STEM!ilg%!0C|Tommie Runolfsson|
+
+
+
+# isim , soyisim, sifre , ssn
+#  employee tarafindan olusturulan account bilgileri kaydedilmeli -- ssn den bulup customer hesaplari olusturup kaydetmeli.
+#  bu bilgiler uzerinden para transferi
 
 
 
