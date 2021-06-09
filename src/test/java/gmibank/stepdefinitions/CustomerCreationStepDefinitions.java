@@ -107,4 +107,7 @@ public class CustomerCreationStepDefinitions {
         System.out.println(registerPage.successMessage.getText());
         Assert.assertEquals(registerPage.successMessage.getText(),"Registration saved! Please check your email for confirmation.");
     }
+    public void test() {
+
+    }
 }
