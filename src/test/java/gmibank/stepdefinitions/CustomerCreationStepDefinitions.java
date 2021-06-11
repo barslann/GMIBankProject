@@ -6,6 +6,7 @@ import gmibank.pages.GmiRegisterPage;
 import gmibank.pojo.CustomerInformation;
 import gmibank.utilities.ConfigurationReader;
 import gmibank.utilities.Driver;
+import gmibank.utilities.SaveCustomerToCustomerInformationTxt;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -97,6 +98,7 @@ public class CustomerCreationStepDefinitions {
         Thread.sleep(2000l);
         // TODO: 6/5/21
         //  save this customer to the customerinforamtion.xml file
+        SaveCustomerToCustomerInformationTxt.WriteObjectToFile(customer);
     }
 
     @And("User successful message should be seen {string}")
@@ -104,5 +106,8 @@ public class CustomerCreationStepDefinitions {
         System.out.println(registerPage.successMessage.getText());
         System.out.println(registerPage.successMessage.getText());
         Assert.assertEquals(registerPage.successMessage.getText(),"Registration saved! Please check your email for confirmation.");
+    }
+    public void test() {
+
     }
 }

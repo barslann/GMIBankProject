@@ -1,55 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="45.64">
-    <testcase classname="end-to-end test" name="admin sign in" time="25.411">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="37.215">
+    <testcase classname="end-to-end test" name="user sign in" time="26.519">
         <system-out>
             <![CDATA[Given user should be on the homepage "homepage_url".........................passed
-When admin navigates to sign in page........................................passed
-Then admin enter username "laurine.wiza"....................................passed
-Then admin enter password "a1STEM!ilg%!0C"..................................passed
-Then admin clicks sign in button............................................passed
-Then admin should be on the home page with "Tommie Runolfsson"..............passed
+When user navigates to sign in page.........................................passed
+Then user enter username "laurine.wiza".....................................passed
+Then user enter password "a1STEM!ilg%!0C"...................................passed
+Then user clicks sign in button.............................................passed
+Then user should be on the home page with "Tommie Runolfsson"...............passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="end-to-end test" name="Admin activates user" time="19.808">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&quot;sdf&quot;]//following-sibling::td[2]/button/span&quot;}&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Bekirs-MacBook-Pro.local', ip: '2600:6c4e:b3f:3104:18d2:3dd4:e2ae:f227%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: /var/folders/6g/xtc8jt7n5yj...}, goog:chromeOptions: {debuggerAddress: localhost:60447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ca810522f5fb844f6de0e48fda91dade&#10;*** Element info: {Using=xpath, value=//*[text()=&quot;sdf&quot;]//following-sibling::td[2]/button/span}" type="org.openqa.selenium.NoSuchElementException">
+    <testcase classname="end-to-end test" name="Admin activates user" time="10.28">
+        <system-out>
             <![CDATA[Given user should be on the homepage "homepage_url".........................passed
 When admin clicks the administration menu...................................passed
 And admin clicks user management option.....................................passed
 And admin click created date to sort the users..............................passed
 And admin finds user and clicks deactivate button...........................passed
-Then user should be activated...............................................failed
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()="sdf"]//following-sibling::td[2]/button/span"}
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Bekirs-MacBook-Pro.local', ip: '2600:6c4e:b3f:3104:18d2:3dd4:e2ae:f227%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: /var/folders/6g/xtc8jt7n5yj...}, goog:chromeOptions: {debuggerAddress: localhost:60447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ca810522f5fb844f6de0e48fda91dade
-*** Element info: {Using=xpath, value=//*[text()="sdf"]//following-sibling::td[2]/button/span}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.getText(Unknown Source)
-	at gmibank.stepdefinitions.UserActivationStepDefinitions.userShouldBeActivated(UserActivationStepDefinitions.java:38)
-	at ✽.user should be activated(file:///Users/coderman/Desktop/GMIBankFramework/src/test/resources/features/endtoend.feature:41)
+And user should be activated................................................passed
+Then admin should log out...................................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>

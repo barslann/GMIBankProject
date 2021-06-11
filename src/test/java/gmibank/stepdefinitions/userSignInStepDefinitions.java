@@ -10,36 +10,36 @@ import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-public class adminSignInStepDefinitions {
+public class userSignInStepDefinitions {
     GmiHomePage homePage = new GmiHomePage();
     LoginPage loginPage = new LoginPage();
 
-    @When("admin navigates to sign in page")
-    public void adminNavigatesToSignInPage() throws InterruptedException {
+    @When("user navigates to sign in page")
+    public void userNavigatesToSignInPage() throws InterruptedException {
         homePage.menu.click();
         Driver.get().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.singIn.click();
     }
 
-    @Then("admin enter username {string}")
-    public void adminEnterUsername(String username) {
+    @Then("user enter username {string}")
+    public void userEnterUsername(String username) {
         loginPage.usernameBox.sendKeys(username + Keys.TAB);
     }
 
-    @Then("admin enter password {string}")
-    public void adminEnterPassword(String password) {
+    @Then("user enter password {string}")
+    public void userEnterPassword(String password) {
         loginPage.passwordBox.sendKeys(password + Keys.TAB);
     }
 
-    @Then("admin clicks sign in button")
-    public void adminClicksSignInButton() throws InterruptedException {
+    @Then("user clicks sign in button")
+    public void userClicksSignInButton() throws InterruptedException {
         loginPage.singInButton.click();
         Thread.sleep(3000);
     }
 
 
-    @Then("admin should be on the home page with {string}")
-    public void adminShouldBeOnTheHomePageWith(String adminName) {
-        Assert.assertEquals(homePage.adminName.getText(),adminName);
+    @Then("user should be on the home page with {string}")
+    public void userShouldBeOnTheHomePageWith(String userName) {
+        Assert.assertEquals(homePage.userName.getText(),userName);
     }
 }
