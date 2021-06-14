@@ -41,7 +41,7 @@ Feature: end-to-end test
     And admin finds user and clicks deactivate button
     And user should be activated
     Then admin should log out
-
+#    todo -> after logging out, user should be on the home page
 
 
 
