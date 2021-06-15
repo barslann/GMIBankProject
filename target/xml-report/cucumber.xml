@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="37.215">
-    <testcase classname="end-to-end test" name="user sign in" time="26.519">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.328">
+    <testcase classname="Customer API Validation" name="_2" time="5.884">
         <system-out>
-            <![CDATA[Given user should be on the homepage "homepage_url".........................passed
-When user navigates to sign in page.........................................passed
-Then user enter username "laurine.wiza".....................................passed
-Then user enter password "a1STEM!ilg%!0C"...................................passed
-Then user clicks sign in button.............................................passed
-Then user should be on the home page with "Tommie Runolfsson"...............passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="end-to-end test" name="Admin activates user" time="10.28">
-        <system-out>
-            <![CDATA[Given user should be on the homepage "homepage_url".........................passed
-When admin clicks the administration menu...................................passed
-And admin clicks user management option.....................................passed
-And admin click created date to sort the users..............................passed
-And admin finds user and clicks deactivate button...........................passed
-And user should be activated................................................passed
-Then admin should log out...................................................passed
+            <![CDATA[Given User provides the api end point to set the response using countries api "countries_api_endpoint" "api_bearer_token".passed
+And All country info will be set to countries with deserialization..........passed
+Then All country info will be saved to txt files............................passed
+Then All country info has been validated....................................passed
 ]]>
         </system-out>
     </testcase>

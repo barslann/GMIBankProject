@@ -21,8 +21,7 @@ public class CustomerInformation implements Serializable {
 
     @Override
     public String toString() {
-        return
-                ssn + ','+
+        return ssn + ','+
                         firstName + ',' +
                         lastName + ',' +
                         address + ',' +

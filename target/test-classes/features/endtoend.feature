@@ -1,9 +1,10 @@
 Feature: end-to-end test
 
   Background: User navigates to register page of gmi bank application
-    Given user should be on the homepage "homepage_url"
+#    Given user should be on the homepage "homepage_url"
+    Given user should be on the homepage "homepage_qa_url"
 
-  @registration
+  @endtoend
   Scenario Outline: Customer creation
     When user navigates to register page
     Then User provide SSN "<SSN>"
@@ -19,10 +20,10 @@ Feature: end-to-end test
     And  User successful message should be seen "Registration saved! Please check your email for confirmation."
     Examples: Valid user creation credentials
     |SSN| firstName|lastName|address|phoneNumber|userName|email|newPassword|newPasswordConfirmation|
-    |123-12-1261|Mehmet|kaya  |123 5th aven| 123-456-7890|sdf|test1@gmail.com|Asdf123?|Asdf123?    |
+    |123-12-9974|Mehmet|kaya  |123 5th aven| 123-456-7890|team46test5|team46test5@gmail.com|Asdf123?|Asdf123?    |
 
 
-  @SignIn
+  @endtoend
   Scenario Outline: user sign in
     When user navigates to sign in page
     Then user enter username "<username>"
@@ -31,9 +32,10 @@ Feature: end-to-end test
     Then user should be on the home page with "<userName>"
     Examples: user sign in data
     |username| password|userName|
-    |laurine.wiza| a1STEM!ilg%!0C|Tommie Runolfsson|
+    |team46admin| Team46admin.| team46 Admin|
+#    |laurine.wiza| a1STEM!ilg%!0C|Tommie Runolfsson|
 
-  @SignIn
+  @endtoend
   Scenario: Admin activates user
     When admin clicks the administration menu
     And admin clicks user management option
@@ -41,13 +43,88 @@ Feature: end-to-end test
     And admin finds user and clicks deactivate button
     And user should be activated
     Then admin should log out
+#    todo -> after logging out, user should be on the home page
+
+  @endtoend
+  Scenario Outline: user sign in
+    When user navigates to sign in page
+    Then user enter username "<username>"
+    Then user enter password "<password>"
+    Then user clicks sign in button
+    Then user should be on the home page with "<name>"
+    Examples: user sign in data
+      |username| password|name|
+      |team46employee| Team46employee.| team46 Employee|
+
+  @endtoend
+    Scenario Outline: employee creates 2 account for a customer
+      When employee click my operations menu
+      And employee click manage accounts option
+      And employee click create a new account
+      And employee provide description "<Description>" with "<userName>"
+      And employee provide balance "<Balance>"
+      And employee provide accountType "<AccountType>"
+      And employee select create date
+      And employee click save button
+      Then account creation is successful message should be seen
+      Examples: data needed for account creation
+      |Description|userName| Balance | AccountType|
+      |checking account for | | 20000| CHECKING   |
+      |saving account for    | | 10000| SAVING    |
+
+  @endtoend
+    Scenario Outline: employee assign 2 accounts to a customer
+      When employee click my operations menu
+      And employee click manage customers option
+      And employee click create a new customer
+      And employee provide customer ssn
+      And employee click search button
+      And employee provide middle initial "<Middle Initial>"
+      And employee provide phoneNumber "<PhoneNumber>"
+      And employee provide zipcode "<zipCode>"
+      And employee provide city "<City>"
+      And employee pick accounts
+      And employee clicks save button
+      Then successful message should be seen
+      And employee should log out
+      Examples: data needed for connecting accounts to customer
+      |Middle Initial| PhoneNumber|zipCode|City|
+      |A             |123-123-1212| 98765 |Los Angeles|
+
+  @endtoend
+  Scenario Outline: user sign in
+    When user navigates to sign in page
+    Then user enter username "<username>"
+    Then user enter password "<password>"
+    Then user clicks sign in button
+    Then user should be on the home page with "<userName>"
+    Examples: user sign in data
+      |username| password|userName|
+      |team46test5| Asdf123?| Mehmet kaya|
+#    |laurine.wiza| a1STEM!ilg%!0C|Tommie Runolfsson|
+
+  @endtoend
+  Scenario Outline: User performs every steps to transfer money between user's accounts
+    When User navigates My Account page
+    And User gets the info about users accounts balance
+    Then User navigates to Transfer Money Page
+    And User performs the money transfer "<Balance>" "<Cent>"
+    Then User navigates My Accounts Page
+    Then User validates that User $ money transferred successfully
+    Examples:
+    |Balance| Cent|
+    |50      |10   |
 
 
 
 
-# isim , soyisim, sifre , ssn
-#  employee tarafindan olusturulan account bilgileri kaydedilmeli -- ssn den bulup customer hesaplari olusturup kaydetmeli.
-#  bu bilgiler uzerinden para transferi
+
+
+
+
+
+
+
 
 
 

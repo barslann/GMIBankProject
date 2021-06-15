@@ -3,247 +3,94 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "User navigates to register page of gmi bank application",
+        "line": 2,
+        "name": "Api end point is being set in response",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 19912472000,
+              "duration": 5559850000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user should be on the homepage \"homepage_url\"",
+            "line": 3,
+            "name": "User provides the api end point to set the response using countries api \"countries_api_endpoint\" \"api_bearer_token\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"homepage_url\"",
-                  "offset": 31
+                  "val": "\"countries_api_endpoint\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"api_bearer_token\"",
+                  "offset": 97
                 }
               ],
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
+              "location": "gmibank.stepdefinitions.US_021_StepDefinitions.userProvidesTheApiEndPointToSetTheResponseUsingCountriesApi(java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-06-08T06:25:36.548Z",
-        "line": 34,
-        "name": "user sign in",
+        "start_timestamp": "2021-06-14T18:27:14.619Z",
+        "line": 6,
+        "name": "",
         "description": "",
-        "id": "end-to-end-test;user-sign-in;user-sign-in-data;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2162301000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "user navigates to sign in page",
-            "match": {
-              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userNavigatesToSignInPage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 542670000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "user enter username \"laurine.wiza\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"laurine.wiza\"",
-                  "offset": 20
-                }
-              ],
-              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userEnterUsername(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 318398000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "user enter password \"a1STEM!ilg%!0C\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"a1STEM!ilg%!0C\"",
-                  "offset": 20
-                }
-              ],
-              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userEnterPassword(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3399235000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "user clicks sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userClicksSignInButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 54197000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "user should be on the home page with \"Tommie Runolfsson\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Tommie Runolfsson\"",
-                  "offset": 37
-                }
-              ],
-              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userShouldBeOnTheHomePageWith(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@SignIn"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "User navigates to register page of gmi bank application",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 4339148000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user should be on the homepage \"homepage_url\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"homepage_url\"",
-                  "offset": 31
-                }
-              ],
-              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-08T06:26:03.103Z",
-        "line": 37,
-        "name": "Admin activates user",
-        "description": "",
-        "id": "end-to-end-test;admin-activates-user",
+        "id": "customer-api-validation;",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 256916000,
+              "duration": 197633000,
               "status": "passed"
             },
-            "line": 38,
-            "name": "admin clicks the administration menu",
+            "line": 7,
+            "name": "All country info will be set to countries with deserialization",
             "match": {
-              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminClicksTheAdministrationMenu()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2172723000,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "admin clicks user management option",
-            "match": {
-              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminClicksUserManagementOption()"
+              "location": "gmibank.stepdefinitions.US_021_StepDefinitions.allCountryInfoWillBeSetToCountriesWithDeserialization()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 649460000,
+              "duration": 30508000,
               "status": "passed"
             },
-            "line": 40,
-            "name": "admin click created date to sort the users",
+            "line": 8,
+            "name": "All country info will be saved to txt files",
             "match": {
-              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminClickCreatedDateToSortTheUsers()"
+              "location": "gmibank.stepdefinitions.US_021_StepDefinitions.allCountryInfoWillBeSavedToTxtFiles()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2496879000,
+              "duration": 719000,
               "status": "passed"
             },
-            "line": 41,
-            "name": "admin finds user and clicks deactivate button",
+            "line": 9,
+            "name": "All country info has been validated",
             "match": {
-              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminFindsUserAndClicksDeactivateButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 386000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "user should be activated",
-            "match": {
-              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.userShouldBeActivated()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 347701000,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "admin should log out",
-            "match": {
-              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminShouldLogOut()"
+              "location": "gmibank.stepdefinitions.US_021_StepDefinitions.allCountryInfoHasBeenValidated()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@SignIn"
+            "name": "@CountryApiTesting"
           }
         ]
       }
     ],
-    "name": "end-to-end test",
+    "name": "Customer API Validation",
     "description": "",
-    "id": "end-to-end-test",
+    "id": "customer-api-validation",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/endtoend.feature",
+    "uri": "file:src/test/resources/features/US_021.feature",
     "tags": []
   }
 ]

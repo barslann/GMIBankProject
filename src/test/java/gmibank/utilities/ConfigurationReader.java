@@ -2,6 +2,7 @@ package gmibank.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public class ConfigurationReader {
@@ -28,6 +29,13 @@ public class ConfigurationReader {
 
     public static String getProperty(String key) {
         return configFile.getProperty(key);
+    }
+
+    public static void writeProperty(String value) throws IOException {
+        Properties prop = new Properties();
+        InputStream in = ConfigurationReader.class.getResourceAsStream("/Users/coderman/Desktop/GMIBankFramework/configuration.properties");
+        prop.load(in);
+        prop.setProperty("api_bearer_token",value);
     }
 
 }

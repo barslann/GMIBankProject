@@ -5,8 +5,9 @@ import gmibank.pages.GmiHomePage;
 import gmibank.pages.GmiRegisterPage;
 import gmibank.pojo.CustomerInformation;
 import gmibank.utilities.ConfigurationReader;
+import gmibank.utilities.ConstantVariables;
 import gmibank.utilities.Driver;
-import gmibank.utilities.SaveCustomerToCustomerInformationTxt;
+import gmibank.utilities.UtilityMethods;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,7 +19,7 @@ import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-public class CustomerCreationStepDefinitions {
+public class CustomerCreationStepDefinitions{
 
     Logger logger = LoggerFactory.getLogger(CustomerCreationStepDefinitions.class);
     GmiHomePage mainPage = new GmiHomePage();
@@ -67,6 +68,7 @@ public class CustomerCreationStepDefinitions {
     @Then("User provide phoneNumber {string}")
     public void userProvidePhoneNumber(String phoneNumber) {
         registerPage.phoneNumberTextBox.sendKeys(phoneNumber+Keys.TAB);
+        customer.setPhoneNumber(phoneNumber);
     }
 
     @Then("User provide userName {string}")
@@ -96,15 +98,11 @@ public class CustomerCreationStepDefinitions {
     public void userClicksRegisterButton() throws InterruptedException {
         registerPage.registerButton.click();
         Thread.sleep(2000l);
-        // TODO: 6/5/21
-        //  save this customer to the customerinforamtion.xml file
-        SaveCustomerToCustomerInformationTxt.WriteObjectToFile(customer);
+        UtilityMethods.saveObjectToFile(ConstantVariables.customerInformationFilePath,customer);
     }
 
     @And("User successful message should be seen {string}")
     public void userSuccessfulMessageShouldBeSeen(String successMessage) {
-        System.out.println(registerPage.successMessage.getText());
-        System.out.println(registerPage.successMessage.getText());
         Assert.assertEquals(registerPage.successMessage.getText(),"Registration saved! Please check your email for confirmation.");
     }
 }

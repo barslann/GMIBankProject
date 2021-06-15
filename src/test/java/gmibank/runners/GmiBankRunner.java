@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "gmibank/stepdefinitions",
-        tags = "@SignIn"
+        tags = "@CountryApiTesting"
 )
 public class GmiBankRunner {
 }
