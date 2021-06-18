@@ -1,6 +1,6 @@
 package gmibank.stepdefinitions;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import gmibank.pojo.LoginInfo;
 import gmibank.pojo.State;
 import gmibank.utilities.ConfigurationReader;
@@ -12,10 +12,6 @@ import static io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.Assert;
-
-import java.sql.SQLOutput;
-import java.util.HashMap;
-import java.util.Map;
 
 public class US_024_StepDefinitions {
 
@@ -42,24 +38,26 @@ public class US_024_StepDefinitions {
     }
 
     @And("User creates a state from api using {string}")
-    public void userCreatesAStateFromApiUsing(String url) {
-
+    public void userCreatesAStateFromApiUsing(String url) throws JsonProcessingException {
         System.out.println("yeni state olusturulup post edilicek");
+        State state = new State();
+        state.setName("maryland");
 
-//        State state = new State("calii");
+//        ObjectMapper mapper = new ObjectMapper();
+//        String jsonString = mapper.writeValueAsString(state);
 
-        Map<String, Object> map = new HashMap<>();
-        map.put("name","calii");
+//        Map<String, Object> map = new HashMap<>();
+//        map.put("name","calii");
 
         response = given().headers("Authorization","Bearer "  + token, "Content-Type", ContentType.JSON,"Accept",ContentType.JSON)
                 .when()
-                .body(map)
+                .body(state)
+                .contentType(ContentType.JSON)
                 .post("https://gmibank-qa-environment.com/api/tp-states");
 
         System.out.println("yeni state post edildi ve response altta");
         Assert.assertEquals(response.getStatusCode(),201);
         response.prettyPrint();
-
 
     }
 

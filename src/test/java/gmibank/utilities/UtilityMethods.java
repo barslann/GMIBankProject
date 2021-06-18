@@ -3,12 +3,10 @@ package gmibank.utilities;
 import gmibank.pojo.Country;
 import gmibank.pojo.Customer;
 import gmibank.pojo.CustomerInformation;
+import gmibank.pojo.Registration;
 
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.*;
 import java.util.*;
 
 public class UtilityMethods {
@@ -156,5 +154,53 @@ public class UtilityMethods {
         String resultToken = token.split("\"")[3];
         return resultToken;
     }
-
+    public static List<String> returnAllStatesIdList (String filePath) {
+        List<String> all = new ArrayList<String>();
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            String line = br.readLine();
+            while (line != null) {
+                // all.add(Integer.parseInt(line.split(",")[0]));
+                all.add(line.split(",")[0]);
+                line = br.readLine();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return all;
+    }
+    public static List<Integer> returnAllCountryIdList (String filePath) {
+        List<Integer> all = new ArrayList<Integer>();
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            String line = br.readLine();
+            while (line != null) {
+                all.add(Integer.parseInt(line.split(",")[0]));
+                //all.add(line.split(",")[1]);
+                line = br.readLine();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return all;
+    }
+    public static Map<Integer,String>  saveDataInfileAllRegistrationInfo(String fileName, Registration[] registration) {
+        Map<Integer,String> map= new HashMap<>();
+        try {
+            FileWriter fileWriter = new FileWriter(fileName,true);
+            BufferedWriter bw = new BufferedWriter(fileWriter);
+            for (int i = 0; i < registration.length; i++) {
+                map.put(registration[i].getId(), registration[i].getUserName());
+                bw.append(registration[i].getId() + "," + registration[i].getSnn()+"," + registration[i].getUserName() + "\n");
+            }
+            bw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return map;
+    }
 }
