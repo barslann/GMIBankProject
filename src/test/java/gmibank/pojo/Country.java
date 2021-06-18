@@ -9,4 +9,9 @@ public class Country {
     private int id;
     private String name;
     private State state;
+
+    @Override
+    public String toString() {
+        return id + "," + name+ ","+ state;
+    }
 }

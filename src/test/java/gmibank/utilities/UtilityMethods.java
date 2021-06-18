@@ -2,10 +2,8 @@ package gmibank.utilities;
 
 import gmibank.pojo.Country;
 import gmibank.pojo.Customer;
-import gmibank.pojo.CustomerAccount;
 import gmibank.pojo.CustomerInformation;
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -14,7 +12,6 @@ import java.io.FileWriter;
 import java.util.*;
 
 public class UtilityMethods {
-
 
     public static void saveObjectToFile(String filePath,Object object) {
         try {
@@ -30,15 +27,12 @@ public class UtilityMethods {
             ex.printStackTrace();
         }
     }
-
     public static void saveObjectToFile(String filePath, Customer[] customers) {
         try {
             FileWriter fileWriter = new FileWriter(filePath,true);
             BufferedWriter bw = new BufferedWriter(fileWriter);
             for(Customer customer: customers) {
                 bw.append(customer.getFirstName() + "," + customer.getLastName()+ "," + customer.getSsn());
-
-
                 bw.newLine();
             }
             bw.close();
@@ -48,7 +42,21 @@ public class UtilityMethods {
             ex.printStackTrace();
         }
     }
+    public static void saveCountriesToFile(String filePath, Object[] objects) {
+        try {
+            FileWriter fileWriter = new FileWriter(filePath,true);
+            BufferedWriter bw = new BufferedWriter(fileWriter);
+            for(Object object: objects) {
+                    bw.append(object.toString());
+                    bw.newLine();
+            }
+            bw.close();
+            System.out.println("Countries successfully added to txt file");
 
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
     public static void saveCountriesToFile(String filePath, Country[] countries) {
         try {
             Set<String> countrySet = new HashSet<>();
@@ -67,7 +75,6 @@ public class UtilityMethods {
             ex.printStackTrace();
         }
     }
-
     public static List<String> getCustomerSsnList() {
         List<String> customerList = new ArrayList<>();
         String sCurrentLine;
@@ -87,8 +94,6 @@ public class UtilityMethods {
 
         return customerList;
     }
-
-
     public static CustomerInformation getCustomerFromCustomerInformationFile() {
         String lastLine = "";
         String sCurrentLine;
@@ -111,7 +116,6 @@ public class UtilityMethods {
 
         return customer;
     }
-
     public static String[] getCustomerAccountFromCustomerAccountFile(String customerName) {
         String sCurrentLine;
         List<String> customerAccounts = new ArrayList<>();
@@ -137,7 +141,6 @@ public class UtilityMethods {
 
         return accounts;
     }
-
     public static int[] parseCurrentTime(){
         Calendar rightNow = Calendar.getInstance();
         rightNow.add(Calendar.MONTH, 1);
@@ -149,13 +152,9 @@ public class UtilityMethods {
         int period = rightNow.get(Calendar.AM_PM);//0 -> AM  1->PM
         return new int[]{month,day,year,hour,minute,period};
     }
-
-
-//    public static String getToken(){
-//        Response response = RestAssured.given().queryParam("admin46team");
-//    }
-
-
-
+    public static String parseToken(String token){
+        String resultToken = token.split("\"")[3];
+        return resultToken;
+    }
 
 }

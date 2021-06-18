@@ -48,7 +48,7 @@ public class US_020_StepDefinitions {
                 .contentType(ContentType.JSON)
                 .extract().response();
 
-//        response.prettyPrint();
+        response.prettyPrint();
 
     }
 
@@ -66,10 +66,12 @@ public class US_020_StepDefinitions {
     @Then("All customer info has been validated")
     public void allCustomerInfoHasBeenValidated() {
         List<String> customerSsnList = UtilityMethods.getCustomerSsnList();
+
+        // DataSet
         List<String> expectedList = new ArrayList<>();
         expectedList.add("476-90-9374");
         expectedList.add("473-22-1798");
-        expectedList.add("326-87-0676");
+
 
         Assert.assertTrue("There is an error!", customerSsnList.containsAll(expectedList));
 

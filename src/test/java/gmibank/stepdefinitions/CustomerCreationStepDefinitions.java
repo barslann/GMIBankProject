@@ -41,20 +41,22 @@ public class CustomerCreationStepDefinitions{
     }
 
     @Then("User provide SSN {string}")
-    public void userProvideSSN(String ssn) {
+    public void userProvideSSN(String ssn) throws InterruptedException {
         registerPage.ssnTextBox.sendKeys(ssn + Keys.TAB);
         customer.setSsn(ssn);
+        Thread.sleep(2000l);
     }
 
     @Then("User provide firstName {string}")
-    public void userProvideFirstName(String firstName) {
+    public void userProvideFirstName(String firstName) throws InterruptedException {
 //        firstName = faker.name().firstName();
         registerPage.firstNameTextBox.sendKeys(firstName +Keys.TAB);
         customer.setFirstName(firstName);
+        Thread.sleep(2000l);
     }
 
     @Then("User provide lastName {string}")
-    public void userProvideLastName(String lastName) {
+    public void userProvideLastName(String lastName) throws InterruptedException {
         registerPage.lastNameTextBox.sendKeys(lastName+Keys.TAB);
         customer.setLastName(lastName);
     }

@@ -1,0 +1,329 @@
+22339,Porto Rico,null
+22343,KENYA,null
+24101,FRANCE,null
+24109,DOMINIC,null
+24110,ANGOLA,null
+24116,Poland,null
+24358,Kuzey Kore,null
+127,Ghana,null
+24376,China,null
+24377,Malta,null
+18903,Tours,null
+18906,Norwegan,null
+1751,ITALY,null
+2,FR,null
+3,USA,null
+5,UNITED KINGDOM,null
+24355,France,null
+22307,Sakarya,null
+18901,Island,null
+18902,Iskocya,null
+18904,England,null
+18909,Scotland,null
+18910,null,null
+18911,Alamanya,null
+18916,YunusEmre,null
+18917,Inkiltere,null
+18918,Pransa,null
+18919,Moritanya,null
+18921,Galler,null
+18923,Kamil,null
+18924,Merhaba,null
+18931,Hakkı,null
+18936,florida,null
+18941,Sabuncu,null
+22330,firdevs,null
+18945,argentina,null
+18949,Switzerland,null
+18950,Liberya,null
+1,Urfali,null
+22306,Yozgat,null
+22303,ABD,null
+18937,new eeeee,null
+22304,Urfali Pasa,null
+22309,Adana,null
+22314,USB,null
+22316,fr01,null
+22317,fr02,null
+22325,Sudan2,null
+22326,Ali,null
+22333,Pays-Bas,null
+22320,Team30's Country,null
+22336, France ,null
+22342,Hollanda31,null
+22332,team32,null
+24389,Mongolia,null
+24392,JAPONYA,null
+24394,Kore,null
+24393,NEW_GINE,null
+24395,BELGIUM,null
+24396,NEDERLANDS,null
+24397,GREECE,null
+24399,SWITZERLAND,null
+24400,DEUTSCHLAND,null
+22341,Meksika,null
+24401,NewCountry,null
+25555,MAKEDONYA,null
+25556,Ireland,null
+25557,Belgium,null
+25564,Scottland,null
+25570,VAN,null
+25578,Andorra,null
+25580,Spain,null
+25583,Monaco,null
+25584,Paris,null
+25586,ankara,null
+25588,,null
+25590,MOZAMBIK,null
+25589,cennet,null
+26657,Ivery Coast,null
+26658,Mexico,null
+26677,HOL,null
+27152,AZTEK MAYA UYGARLIGI,null
+27153,AZTEK MAYA UYGARLIGI 2,null
+27155,MEXICO,null
+27158,Kambocya,null
+27160,Kambocya2,null
+27162,Kambocya3,null
+27163,Kambocya4,null
+25561,Van,null
+27175,Kambocyaa,null
+27183,Tanzania,null
+27188,Tanzania1,null
+27189,Tanzania2,null
+27193,zambia,null
+27197,GERMANY,null
+27198,TURKEY,null
+27199,MISIR,null
+27904,Tanzania7,null
+27905,Tanzania20,null
+27906,MAKEDONYA2,null
+27912,MAKEDONYAA,null
+27914,MAKEDONYAA2,null
+27915,MAKEDONYAA3,null
+27918,Tanzania6,null
+27928,Tanzania111,null
+27929,Tanzania88,null
+27930,Tanzania98,null
+27931,Tanzania101,null
+27933,name,null
+27936,Finland,null
+30801,Kambochia,null
+30843,Germany,null
+31013,Turkey,null
+31045,Nauru,null
+31049,KamilE,null
+31050,world,null
+31016,muz cumhuriyeti,null
+31025,Banana Republic,null
+18908,Cibuti,null
+57069,dea3b2g5j8,null
+57055,Falamanya,null
+57070,host,null
+57059,ALtanya,null
+57060,Antarctica,null
+57061,123,null
+57062,12345,null
+57064,123456,null
+57067,GuzelIzmir,null
+57076,holaya,null
+10,japonya,null
+59604,Fizan,null
+31018,Pirasa Cumhuriyeti,null
+59611,serdar,null
+59613,Busan,null
+59614,Cindy,null
+59623,Prasa,null
+61112,NewCountry61,null
+59626,Haru,null
+59635,KambOcya,null
+59638,Papua New Gine,null
+60780,Tajikistan,null
+59645,Yeni Zelaand,null
+59650,TR,null
+60101,BEL,null
+60111,Yeni Bayram,null
+60112,Honolulu,null
+60114,emre,null
+60115,Anil,null
+60117,Karamanya,null
+60118,oSizinUlke,null
+60113,emreyeni,null
+60119,luzumsuz,null
+60120,Amerika,null
+60121,Japan,null
+60123, Incheon,null
+60124, Ulsan1,null
+60131,morocco,null
+60133,fas,null
+60140,brezilya,null
+60148,DOMINICia,null
+60149,DOMINICian,null
+60150,NewYork21,null
+60756,Katlynn,null
+60757,Krystel,null
+60758,Laurie,null
+60759,Russell,null
+60760,Isabel,null
+60761,Madagascar,null
+60764,Madagascar1,null
+60768,Mongolia2,null
+60769,Mongolia3,null
+60771,Lilly,null
+60772,Pat,null
+60773,UK,null
+60779,Belize_island,null
+60787,asim,null
+60796,India54,null
+61102,Phillipines,null
+13,Liechtenstein,null
+60754,Bordo,null
+557,Deutschland,null
+57074,EGELI,null
+61113,giriggale,null
+61118,Nigeria,null
+61122,ÖzCountry61,null
+61129,New Zelland,null
+61130,New Zelland2,null
+62322,DONIC,null
+61132,Tunisia,null
+61133,Mozambique,null
+61135,Cyprus,null
+62323,new,null
+61146,Togo,null
+61147,Chad,null
+61148,Korea (Democratic People's Republic of),null
+61149,Iceland,null
+61150,Russian Federation,null
+62324,Hungary,null
+62020,Bosnia and Herzegovina,null
+62021,Cabo Verde,null
+62029,Honduras,null
+62030,Sweden,null
+62033,Netherlands,null
+62036,India,null
+62037,Afghanistan,null
+62038,Thailand,null
+62039,Malawi,null
+62040,Haiti,null
+62041,Algeria,null
+62043,Papua New Guinea,null
+62044,Samoa,null
+62045,Sri Lanka,null
+62102,Brasil,null
+62113,Maldives,null
+62114,Barbados,null
+62118,Croatia,null
+62125,Libya,null
+62129,LibyaUlkesi,null
+62140,LibyaUlkesi12,null
+62141,Hollanda,null
+62310,Somewhere,null
+62311,Anywhere,null
+62325,KEN,null
+62326,Dominican Republic,null
+62348,Dunya,null
+62705,Grenada,null
+62706,Paraguay,null
+62708,Singapore,null
+64266,Patagonya,null
+62860,Muz Cumhuriyeti,null
+62862,Pakistan,null
+62136,absurt,null
+62874,Zambiya,null
+62877,Laos,null
+62883,World2,null
+62885,JUSTICE COUNTRY,null
+72808,Gine,null
+72809,Angola,null
+72811,Madagaskar,null
+72820,Brazil,null
+72821,Morocco,null
+72825,Kambodia,null
+72826,Kambodia2,null
+72827,Malavie,null
+72828,Malavie2,null
+73004,Mali,null
+73008,Hawai,null
+73009,Hawaiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii,null
+73013,Canada,null
+73014,Russia,null
+73020,Luna,null
+73021,Kingson,null
+73869,Mono,null
+73630,Kingston,null
+73770,Nigeria2,null
+73773,Zulu,null
+73868,Emr,null
+73969,New Zealand,null
+73973,Costa Rica,null
+73974,Alamania,null
+73975,Rainbowia,null
+73976,Matrixow,null
+73978,Gana,null
+73980,Turkiye,null
+73996,MADAGASKAR,null
+74413,maldives,null
+74424,XYZ,null
+74428,tahtalikoy,null
+74429,hasankoy,null
+74435,newShehirim,null
+74449,Neverland,null
+74450,FREEDOM,null
+9,pinar,null
+11,zubeyde,null
+88455,Nijerya,null
+88460,Husamettin,null
+88461,Team30,null
+88463,Team36,null
+88470,Italy,null
+89265,Freedom,null
+89267,FreeWorld,null
+89268,FairLand,null
+89292, TURKEY ,null
+89297, USE ,null
+89300, IRAK ,null
+89551,Gokturkdevleti,null
+89565, ALMANYA ,null
+89566, HOLLANDA ,null
+89571,HOLLANDA,null
+89572,country002,null
+89576,Brezilya,null
+89579,BREZILYA,null
+89582,Uruguay,null
+89585,URUGUAY,null
+89586, ukrayna ,null
+89589,Yeni Zellanda,null
+90102,ali,null
+90104,Usa,null
+90106,Kaiser,null
+90107,Matat,null
+90313,BeyazUlke,null
+90314,YeniDunya,null
+90487,countryName,null
+90491,Arizona,null
+90500,anyCountry,null
+90604,Austin,null
+90619,Kenya,null
+90631,Ilker,null
+90635,Team30Country,null
+90855, Ukrayna ,null
+4101,Team43GuzelUlke,null
+4102,Team43Land01,null
+4104,null,null
+4112,Team43LandUpdated02,null
+4113,Team43Land02,null
+4118,Hollanda13213,null
+4125,Team43Land99,null
+4126,Team43LandUpdated99,null
+4130,Team43LandUpdated100,null
+4133,Team43Ulkeeee,null
+4137,Team43Land107,null
+4143,Mutluluk,null
+4145,Team43Land156,null
+4146,Abc123,null
+4451,UnitedKingdom,null
+4458,Ottoman Empire,null
+4459,Selcuks,null
+4466,Asya Hun Devleti,null
+4479,Huzur Ulkesi,null
