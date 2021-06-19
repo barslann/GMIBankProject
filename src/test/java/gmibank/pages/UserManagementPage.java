@@ -29,4 +29,7 @@ public class UserManagementPage {
     @FindBy(xpath = "//li//a[@aria-label=\"Next\"]")
     public WebElement nextPageArrow;
 
+    @FindBy(xpath = "//div[@class='Toastify__toast-body']")
+    public WebElement successMessage;
+
 }

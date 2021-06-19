@@ -4,6 +4,7 @@ import gmibank.pages.AdminHomePage;
 import gmibank.pages.GmiHomePage;
 import gmibank.pages.UserManagementPage;
 import gmibank.pojo.CustomerInformation;
+import gmibank.utilities.BrowserUtils;
 import gmibank.utilities.Driver;
 import gmibank.utilities.UtilityMethods;
 import io.cucumber.java.en.And;
@@ -11,6 +12,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.io.IOException;
 
@@ -19,6 +21,7 @@ public class UserActivationStepDefinitions {
     AdminHomePage adminHomePage = new AdminHomePage();
     GmiHomePage gmiHomePage = new GmiHomePage();
     WebDriverWait webDriverWait = new WebDriverWait(Driver.get(),3);
+    CustomerInformation customer;
 
     @When("admin clicks the administration menu")
     public void adminClicksTheAdministrationMenu() {
@@ -26,15 +29,15 @@ public class UserActivationStepDefinitions {
     }
 
     @And("admin clicks user management option")
-    public void adminClicksUserManagementOption() throws InterruptedException {
+    public void adminClicksUserManagementOption() {
         adminHomePage.userManagementOption.click();
-        Thread.sleep(2000l);
+        BrowserUtils.wait(2);
     }
 
     @And("admin click created date to sort the users")
-    public void adminClickCreatedDateToSortTheUsers() throws InterruptedException {
+    public void adminClickCreatedDateToSortTheUsers(){
         userManagementPage.createdDateArrows.click();
-        Thread.sleep(3000l);
+        BrowserUtils.wait(3);
     }
 
 //    @And("admin finds user and clicks deactivate button")
@@ -95,8 +98,8 @@ public class UserActivationStepDefinitions {
 //        Thread.sleep(2000l);
 //    }
 @And("admin finds user and clicks deactivate button")
-public void adminFindsUserAndClicksDeactivateButton() throws InterruptedException, IOException {
-    CustomerInformation customer = UtilityMethods.getCustomerFromCustomerInformationFile();
+public void adminFindsUserAndClicksDeactivateButton() throws InterruptedException {
+        customer = UtilityMethods.getCustomerFromCustomerInformationFile();
     String customerName = customer.getUserName();
     System.out.println("Customer userName" + customerName);
 
@@ -133,15 +136,16 @@ public void adminFindsUserAndClicksDeactivateButton() throws InterruptedExceptio
     Thread.sleep(2000l);
 }
 
-    @And("user should be activated")
-    public void userShouldBeActivated() {
-//        Assert.assertEquals(userManagementPage.activateButtonText.getText(),"Activated");
+    @And("user should be activated with message {string}")
+    public void userShouldBeActivatedWithMessage(String message) {
+        Assert.assertEquals(userManagementPage.successMessage.getText(),message + customer.getUserName());
     }
-
 
     @Then("admin should log out")
     public void adminShouldLogOut() {
         gmiHomePage.userName.click();
         gmiHomePage.logOutOption.click();
     }
+
+
 }

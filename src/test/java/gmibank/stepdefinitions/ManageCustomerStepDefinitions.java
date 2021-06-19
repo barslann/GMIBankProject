@@ -4,6 +4,7 @@ import gmibank.pages.EmployeeHomePage;
 import gmibank.pages.GmiHomePage;
 import gmibank.pages.ManageCustomerPage;
 import gmibank.pojo.CustomerInformation;
+import gmibank.utilities.BrowserUtils;
 import gmibank.utilities.ConstantVariables;
 import gmibank.utilities.UtilityMethods;
 import io.cucumber.java.an.E;
@@ -36,13 +37,16 @@ public class ManageCustomerStepDefinitions {
 
     @And("employee click create a new customer")
     public void employeeClickCreateANewCustomer() {
+        BrowserUtils.wait(1);
         manageCustomerPage.createANewCustomerButton.click();
     }
 
     @And("employee provide customer ssn")
     public void employeeProvideCustomerSsn() {
         String customerSsn = customer.getSsn();
-        manageCustomerPage.searchSsnTextBox.sendKeys(customerSsn + Keys.TAB);
+        BrowserUtils.wait(1);
+        manageCustomerPage.searchSsnTextBox.sendKeys(customerSsn);
+        BrowserUtils.wait(2);
     }
     @And("employee click search button")
     public void employeeClickSearchButton() {
@@ -51,24 +55,28 @@ public class ManageCustomerStepDefinitions {
 
     @And("employee provide middle initial {string}")
     public void employeeProvideMiddleInitial(String middleInitial) {
-        manageCustomerPage.middleInitialTextBox.sendKeys(middleInitial + Keys.TAB);
+        manageCustomerPage.middleInitialTextBox.sendKeys(middleInitial);
+        BrowserUtils.wait(2);
     }
 
 
 
     @And("employee provide phoneNumber {string}")
     public void employeeProvidePhoneNumber(String phoneNumber) {
-        manageCustomerPage.phoneNumberTextBox.sendKeys(phoneNumber + Keys.TAB);
+        manageCustomerPage.phoneNumberTextBox.sendKeys(phoneNumber);
+        BrowserUtils.wait(2);
     }
 
     @And("employee provide zipcode {string}")
     public void employeeProvideZipcode(String zipCode) {
-        manageCustomerPage.zipNumberTextBox.sendKeys(zipCode + Keys.TAB);
+        manageCustomerPage.zipNumberTextBox.sendKeys(zipCode);
+        BrowserUtils.wait(2);
     }
 
     @And("employee provide city {string}")
     public void employeeProvideCity(String city) {
-        manageCustomerPage.cityTextBox.sendKeys(city + Keys.TAB);
+        manageCustomerPage.cityTextBox.sendKeys(city);
+        BrowserUtils.wait(2);
     }
 
     @And("employee pick accounts")
@@ -77,6 +85,8 @@ public class ManageCustomerStepDefinitions {
         String[] accounts = UtilityMethods.getCustomerAccountFromCustomerAccountFile(customerName);
         Select select = new Select(manageCustomerPage.customerAccountSelect);
         for(String account: accounts) select.selectByVisibleText(account);
+
+        BrowserUtils.wait(3);
     }
     @And("employee clicks save button")
     public void employeeClicksSaveButton() throws InterruptedException {

@@ -4,10 +4,7 @@ import com.github.javafaker.Faker;
 import gmibank.pages.GmiHomePage;
 import gmibank.pages.GmiRegisterPage;
 import gmibank.pojo.CustomerInformation;
-import gmibank.utilities.ConfigurationReader;
-import gmibank.utilities.ConstantVariables;
-import gmibank.utilities.Driver;
-import gmibank.utilities.UtilityMethods;
+import gmibank.utilities.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,6 +13,7 @@ import org.openqa.selenium.Keys;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
+
 
 import java.util.concurrent.TimeUnit;
 
@@ -41,70 +39,77 @@ public class CustomerCreationStepDefinitions{
     }
 
     @Then("User provide SSN {string}")
-    public void userProvideSSN(String ssn) throws InterruptedException {
-        registerPage.ssnTextBox.sendKeys(ssn + Keys.TAB);
+    public void userProvideSSN(String ssn)  {
+        registerPage.ssnTextBox.sendKeys(ssn);
         customer.setSsn(ssn);
-        Thread.sleep(2000l);
+        BrowserUtils.wait(2);
     }
 
     @Then("User provide firstName {string}")
-    public void userProvideFirstName(String firstName) throws InterruptedException {
+    public void userProvideFirstName(String firstName) {
 //        firstName = faker.name().firstName();
-        registerPage.firstNameTextBox.sendKeys(firstName +Keys.TAB);
+        registerPage.firstNameTextBox.sendKeys(firstName);
         customer.setFirstName(firstName);
-        Thread.sleep(2000l);
+        BrowserUtils.wait(2);
     }
 
     @Then("User provide lastName {string}")
-    public void userProvideLastName(String lastName) throws InterruptedException {
-        registerPage.lastNameTextBox.sendKeys(lastName+Keys.TAB);
+    public void userProvideLastName(String lastName) {
+        registerPage.lastNameTextBox.sendKeys(lastName);
         customer.setLastName(lastName);
+        BrowserUtils.wait(2);
     }
 
     @Then("User provide address {string}")
     public void userProvideAddress(String address) {
         registerPage.addressTextBox.sendKeys(address+Keys.TAB);
         customer.setAddress(address);
+        BrowserUtils.wait(2);
     }
 
     @Then("User provide phoneNumber {string}")
     public void userProvidePhoneNumber(String phoneNumber) {
-        registerPage.phoneNumberTextBox.sendKeys(phoneNumber+Keys.TAB);
+        registerPage.phoneNumberTextBox.sendKeys(phoneNumber);
         customer.setPhoneNumber(phoneNumber);
+        BrowserUtils.wait(2);
     }
 
     @Then("User provide userName {string}")
     public void userProvideUserName(String userName) {
-        registerPage.userNameTextBox.sendKeys(userName + Keys.TAB);
+        registerPage.userNameTextBox.sendKeys(userName);
         customer.setUserName(userName);
+        BrowserUtils.wait(2);
     }
 
     @Then("User provide email {string}")
     public void userProvideEmail(String email) {
-        registerPage.emailTextBox.sendKeys(email + Keys.TAB);
+        registerPage.emailTextBox.sendKeys(email);
         customer.setEmail(email);
+        BrowserUtils.wait(2);
     }
 
     @Then("User provide newPassword {string}")
     public void userProvideNewPassword(String newPassword) {
-        registerPage.newPasswordTextBox.sendKeys(newPassword + Keys.TAB);
+        registerPage.newPasswordTextBox.sendKeys(newPassword);
         customer.setPassword(newPassword);
+        BrowserUtils.wait(2);
     }
 
     @Then("User provide newPasswordConfirmation {string}")
     public void userProvideNewPasswordConfirmation(String newPasswordConfirmation) {
-        registerPage.newPasswordConfirmationTextBox.sendKeys(newPasswordConfirmation + Keys.TAB);
+        registerPage.newPasswordConfirmationTextBox.sendKeys(newPasswordConfirmation);
+        BrowserUtils.wait(2);
     }
 
     @Then("User clicks register button")
-    public void userClicksRegisterButton() throws InterruptedException {
+    public void userClicksRegisterButton() {
         registerPage.registerButton.click();
-        Thread.sleep(2000l);
+        BrowserUtils.wait(2);
         UtilityMethods.saveObjectToFile(ConstantVariables.customerInformationFilePath,customer);
     }
 
     @And("User successful message should be seen {string}")
     public void userSuccessfulMessageShouldBeSeen(String successMessage) {
-        Assert.assertEquals(registerPage.successMessage.getText(),"Registration saved! Please check your email for confirmation.");
+        Assert.assertEquals(registerPage.successMessage.getText(),successMessage);
     }
 }

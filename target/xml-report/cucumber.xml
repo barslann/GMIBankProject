@@ -1,11 +1,126 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.328">
-    <testcase classname="Customer API Validation" name="_2" time="5.884">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="189.891">
+    <testcase classname="end-to-end test" name="Customer creation" time="38.055">
         <system-out>
-            <![CDATA[Given User provides the api end point to set the response using countries api "countries_api_endpoint" "api_bearer_token".passed
-And All country info will be set to countries with deserialization..........passed
-Then All country info will be saved to txt files............................passed
-Then All country info has been validated....................................passed
+            <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
+When user navigates to register page........................................passed
+Then User provide SSN "123-12-9971".........................................passed
+Then User provide firstName "Mehmet"........................................passed
+Then User provide lastName "Kaya"...........................................passed
+Then User provide address "123 5th aven"....................................passed
+Then User provide phoneNumber "123-456-7890"................................passed
+Then User provide userName "team46test8"....................................passed
+Then User provide email "team46test8@gmail.com".............................passed
+Then User provide newPassword "Asdf123?"....................................passed
+Then User provide newPasswordConfirmation "Asdf123?"........................passed
+Then User clicks register button............................................passed
+And User successful message should be seen "Registration saved! Please check your email for confirmation.".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="end-to-end test" name="user sign in" time="11.566">
+        <system-out>
+            <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
+When user navigates to sign in page.........................................passed
+Then user enter username "team46admin"......................................passed
+Then user enter password "Team46admin.".....................................passed
+Then user clicks sign in button.............................................passed
+Then user should be on the home page with "team46 Admin"....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="end-to-end test" name="Admin activates user" time="14.815">
+        <system-out>
+            <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
+When admin clicks the administration menu...................................passed
+And admin clicks user management option.....................................passed
+And admin click created date to sort the users..............................passed
+And admin finds user and clicks deactivate button...........................passed
+And user should be activated with message "A user is updated with identifier ".passed
+Then admin should log out...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="end-to-end test" name="user sign in" time="10.844">
+        <system-out>
+            <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
+When user navigates to sign in page.........................................passed
+Then user enter username "team46employee"...................................passed
+Then user enter password "Team46employee."..................................passed
+Then user clicks sign in button.............................................passed
+Then user should be on the home page with "team46 Employee".................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="end-to-end test" name="employee creates 2 account for a customer" time="26.329">
+        <system-out>
+            <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
+When employee click my operations menu......................................passed
+And employee click manage accounts option...................................passed
+And employee click create a new account.....................................passed
+And employee provide description "checking account for" with "".............passed
+And employee provide balance "20000"........................................passed
+And employee provide accountType "CHECKING".................................passed
+And employee select create date.............................................passed
+And employee click save button..............................................passed
+Then account creation is successful message should be seen..................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="end-to-end test" name="employee creates 2 account for a customer 2" time="25.259">
+        <system-out>
+            <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
+When employee click my operations menu......................................passed
+And employee click manage accounts option...................................passed
+And employee click create a new account.....................................passed
+And employee provide description "saving account for" with ""...............passed
+And employee provide balance "10000"........................................passed
+And employee provide accountType "SAVING"...................................passed
+And employee select create date.............................................passed
+And employee click save button..............................................passed
+Then account creation is successful message should be seen..................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="end-to-end test" name="employee assign 2 accounts to a customer" time="28.611">
+        <system-out>
+            <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
+When employee click my operations menu......................................passed
+And employee click manage customers option..................................passed
+And employee click create a new customer....................................passed
+And employee provide customer ssn...........................................passed
+And employee click search button............................................passed
+And employee provide middle initial "A".....................................passed
+And employee provide phoneNumber "123-123-1212".............................passed
+And employee provide zipcode "98765"........................................passed
+And employee provide city "Los Angeles".....................................passed
+And employee pick accounts..................................................passed
+And employee clicks save button.............................................passed
+Then successful message should be seen......................................passed
+And employee should log out.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="end-to-end test" name="user sign in" time="10.799">
+        <system-out>
+            <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
+When user navigates to sign in page.........................................passed
+Then user enter username "team46test5"......................................passed
+Then user enter password "Asdf123?".........................................passed
+Then user clicks sign in button.............................................passed
+Then user should be on the home page with "Mehmet kaya".....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="end-to-end test" name="User performs every steps to transfer money between user's accounts" time="22.771">
+        <system-out>
+            <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
+When User navigates My Account page.........................................passed
+And User gets the info about users accounts balance.........................passed
+Then User navigates to Transfer Money Page..................................passed
+And User performs the money transfer "50" "10"..............................passed
+Then User navigates My Accounts Page........................................passed
+Then User validates that User $ money transferred successfully..............passed
 ]]>
         </system-out>
     </testcase>

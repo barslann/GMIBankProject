@@ -6,3 +6,5 @@ team46test4,checking account for team46test4,20000,CHECKING,13/6/2021/17:4 PM
 team46test4,saving account for team46test4,10000,SAVING,13/6/2021/17:4 PM
 team46test5,checking account for team46test5,20000,CHECKING,13/6/2021/17:13 PM
 team46test5,saving account for team46test5,10000,SAVING,13/6/2021/17:13 PM
+team46test8,checking account for team46test8,20000,CHECKING,18/6/2021/18:25 PM
+team46test8,saving account for team46test8,10000,SAVING,18/6/2021/18:25 PM

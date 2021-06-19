@@ -21,6 +21,7 @@ public class CreateCustomerAccountStepDefinitions{
     @When("employee click my operations menu")
     public void employeeClickMyOperationsMenu() {
         employeeHomePage.myOperationsMenu.click();
+        BrowserUtils.wait(2);
     }
 
     @And("employee click manage accounts option")
@@ -36,17 +37,20 @@ public class CreateCustomerAccountStepDefinitions{
 
     @And("employee provide description {string} with {string}")
     public void employeeProvideDescriptionWith(String description, String username) {
+        BrowserUtils.wait(1);
         CustomerInformation customer = UtilityMethods.getCustomerFromCustomerInformationFile();
         username = customer.getUserName();
         customerAccount.setDescription(description + " " + username);
         customerAccount.setCustomerName(username);
-        createCustomerAccountPage.descriptionTextBox.sendKeys(description +" " + username + Keys.TAB);
+        createCustomerAccountPage.descriptionTextBox.sendKeys(description +" " + username);
+        BrowserUtils.wait(2);
     }
 
     @And("employee provide balance {string}")
     public void employeeProvideBalance(String balance) {
         customerAccount.setBalance(balance);
-        createCustomerAccountPage.balanceTextBox.sendKeys(balance + Keys.TAB);
+        createCustomerAccountPage.balanceTextBox.sendKeys(balance);
+        BrowserUtils.wait(2);
     }
 
     @And("employee provide accountType {string}")
@@ -54,6 +58,7 @@ public class CreateCustomerAccountStepDefinitions{
         customerAccount.setAccountType(accountType);
         Select accountTypeSelectBox = new Select(createCustomerAccountPage.accountTypeCheckBox);
         accountTypeSelectBox.selectByVisibleText(accountType);
+        BrowserUtils.wait(2);
     }
 
     @And("employee select create date")
@@ -69,6 +74,8 @@ public class CreateCustomerAccountStepDefinitions{
         createCustomerAccountPage.createDateInput.sendKeys(
                 month+day+year+Keys.TAB+hour+minute+period+Keys.TAB
         );
+
+        BrowserUtils.wait(2);
 
     }
 

@@ -3,6 +3,7 @@ package gmibank.stepdefinitions;
 import gmibank.pages.CustomerPage;
 import gmibank.pages.MoneyTransferPage;
 import gmibank.pages.MyAccountPage;
+import gmibank.utilities.BrowserUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -55,10 +56,14 @@ public class MoneyTransferStepDefinitions {
         from.selectByIndex(1);
         to.selectByIndex(1);
         moneyTransferPage.balanceTextBox.sendKeys(balance);
+        BrowserUtils.wait(2);
         moneyTransferPage.centTextBox.clear();
         moneyTransferPage.centTextBox.sendKeys(cent);
+        BrowserUtils.wait(2);
         moneyTransferPage.descriptionTextBox.sendKeys("hotel booking");
+        BrowserUtils.wait(2);
         moneyTransferPage.makeTransferButton.click();
+
     }
 
     @Then("User navigates My Accounts Page")
@@ -81,7 +86,5 @@ public class MoneyTransferStepDefinitions {
         balanceDouble += centDouble/100.00;
         Assert.assertEquals(firstAccountBalanceAfterTransfer, round(firstAccountBalance-balanceDouble,2), "doesn't match");
         Assert.assertEquals(secondAccountBalanceAfterTransfer, round(secondAccountBalance+balanceDouble,2), "doesn't match");
-
     }
-
 }

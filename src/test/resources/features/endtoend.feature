@@ -1,7 +1,6 @@
 Feature: end-to-end test
 
   Background: User navigates to register page of gmi bank application
-#    Given user should be on the homepage "homepage_url"
     Given user should be on the homepage "homepage_qa_url"
 
   @endtoend
@@ -20,7 +19,7 @@ Feature: end-to-end test
     And  User successful message should be seen "Registration saved! Please check your email for confirmation."
     Examples: Valid user creation credentials
     |SSN| firstName|lastName|address|phoneNumber|userName|email|newPassword|newPasswordConfirmation|
-    |123-12-9974|Mehmet|kaya  |123 5th aven| 123-456-7890|team46test5|team46test5@gmail.com|Asdf123?|Asdf123?    |
+    |123-12-9971|Mehmet|Kaya  |123 5th aven| 123-456-7890|team46test8|team46test8@gmail.com|Asdf123?|Asdf123?    |
 
 
   @endtoend
@@ -41,9 +40,8 @@ Feature: end-to-end test
     And admin clicks user management option
     And admin click created date to sort the users
     And admin finds user and clicks deactivate button
-    And user should be activated
+    And user should be activated with message "A user is updated with identifier "
     Then admin should log out
-#    todo -> after logging out, user should be on the home page
 
   @endtoend
   Scenario Outline: user sign in

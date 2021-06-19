@@ -3,94 +3,1436 @@
     "line": 1,
     "elements": [
       {
-        "line": 2,
-        "name": "Api end point is being set in response",
+        "line": 3,
+        "name": "User navigates to register page of gmi bank application",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 5559850000,
+              "duration": 13743363000,
               "status": "passed"
             },
-            "line": 3,
-            "name": "User provides the api end point to set the response using countries api \"countries_api_endpoint\" \"api_bearer_token\"",
+            "line": 4,
+            "name": "user should be on the homepage \"homepage_qa_url\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"countries_api_endpoint\"",
-                  "offset": 72
-                },
-                {
-                  "val": "\"api_bearer_token\"",
-                  "offset": 97
+                  "val": "\"homepage_qa_url\"",
+                  "offset": 31
                 }
               ],
-              "location": "gmibank.stepdefinitions.US_021_StepDefinitions.userProvidesTheApiEndPointToSetTheResponseUsingCountriesApi(java.lang.String,java.lang.String)"
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-06-14T18:27:14.619Z",
-        "line": 6,
-        "name": "",
+        "start_timestamp": "2021-06-19T01:23:30.139Z",
+        "line": 22,
+        "name": "Customer creation",
         "description": "",
-        "id": "customer-api-validation;",
+        "id": "end-to-end-test;customer-creation;valid-user-creation-credentials;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 197633000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "All country info will be set to countries with deserialization",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_021_StepDefinitions.allCountryInfoWillBeSetToCountriesWithDeserialization()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30508000,
+              "duration": 1236700000,
               "status": "passed"
             },
             "line": 8,
-            "name": "All country info will be saved to txt files",
+            "name": "user navigates to register page",
             "match": {
-              "location": "gmibank.stepdefinitions.US_021_StepDefinitions.allCountryInfoWillBeSavedToTxtFiles()"
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userNavigatesToRegisterPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2724704000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User provide SSN \"123-12-9971\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123-12-9971\"",
+                  "offset": 17
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideSSN(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 719000,
+              "duration": 2121765000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "All country info has been validated",
+            "line": 10,
+            "name": "User provide firstName \"Mehmet\"",
             "match": {
-              "location": "gmibank.stepdefinitions.US_021_StepDefinitions.allCountryInfoHasBeenValidated()"
+              "arguments": [
+                {
+                  "val": "\"Mehmet\"",
+                  "offset": 23
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideFirstName(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2171276000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User provide lastName \"Kaya\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kaya\"",
+                  "offset": 22
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideLastName(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2488578000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User provide address \"123 5th aven\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123 5th aven\"",
+                  "offset": 21
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideAddress(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2150009000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User provide phoneNumber \"123-456-7890\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123-456-7890\"",
+                  "offset": 25
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvidePhoneNumber(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2104198000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User provide userName \"team46test8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team46test8\"",
+                  "offset": 22
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideUserName(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2354540000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User provide email \"team46test8@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team46test8@gmail.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideEmail(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2181256000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User provide newPassword \"Asdf123?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Asdf123?\"",
+                  "offset": 25
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideNewPassword(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2171757000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User provide newPasswordConfirmation \"Asdf123?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Asdf123?\"",
+                  "offset": 37
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userProvideNewPasswordConfirmation(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2386543000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clicks register button",
+            "match": {
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userClicksRegisterButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44751000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User successful message should be seen \"Registration saved! Please check your email for confirmation.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Registration saved! Please check your email for confirmation.\"",
+                  "offset": 39
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userSuccessfulMessageShouldBeSeen(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@endtoend"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigates to register page of gmi bank application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3781167000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage \"homepage_qa_url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"homepage_qa_url\"",
+                  "offset": 31
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-19T01:24:08.258Z",
+        "line": 34,
+        "name": "user sign in",
+        "description": "",
+        "id": "end-to-end-test;user-sign-in;user-sign-in-data;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 283089000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user navigates to sign in page",
+            "match": {
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userNavigatesToSignInPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2063047000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user enter username \"team46admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team46admin\"",
+                  "offset": 20
+                }
+              ],
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userEnterUsername(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2100509000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user enter password \"Team46admin.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Team46admin.\"",
+                  "offset": 20
+                }
+              ],
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userEnterPassword(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3279746000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userClicksSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34869000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user should be on the home page with \"team46 Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team46 Admin\"",
+                  "offset": 37
+                }
+              ],
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userShouldBeOnTheHomePageWith(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@CountryApiTesting"
+            "name": "@endtoend"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigates to register page of gmi bank application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3522892000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage \"homepage_qa_url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"homepage_qa_url\"",
+                  "offset": 31
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-19T01:24:19.860Z",
+        "line": 38,
+        "name": "Admin activates user",
+        "description": "",
+        "id": "end-to-end-test;admin-activates-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 120334000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "admin clicks the administration menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminClicksTheAdministrationMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2079036000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "admin clicks user management option",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminClicksUserManagementOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3456251000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "admin click created date to sort the users",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminClickCreatedDateToSortTheUsers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5272164000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "admin finds user and clicks deactivate button",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminFindsUserAndClicksDeactivateButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36924000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user should be activated with message \"A user is updated with identifier \"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"A user is updated with identifier \"",
+                  "offset": 38
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.userShouldBeActivatedWithMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 311513000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "admin should log out",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserActivationStepDefinitions.adminShouldLogOut()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@endtoend"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigates to register page of gmi bank application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3366525000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage \"homepage_qa_url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"homepage_qa_url\"",
+                  "offset": 31
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-19T01:24:34.704Z",
+        "line": 55,
+        "name": "user sign in",
+        "description": "",
+        "id": "end-to-end-test;user-sign-in;user-sign-in-data;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 188483000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user navigates to sign in page",
+            "match": {
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userNavigatesToSignInPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2058091000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user enter username \"team46employee\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team46employee\"",
+                  "offset": 20
+                }
+              ],
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userEnterUsername(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2088423000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user enter password \"Team46employee.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Team46employee.\"",
+                  "offset": 20
+                }
+              ],
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userEnterPassword(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3084209000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userClicksSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41505000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user should be on the home page with \"team46 Employee\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team46 Employee\"",
+                  "offset": 37
+                }
+              ],
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userShouldBeOnTheHomePageWith(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@endtoend"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigates to register page of gmi bank application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3347753000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage \"homepage_qa_url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"homepage_qa_url\"",
+                  "offset": 31
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-19T01:24:45.566Z",
+        "line": 70,
+        "name": "employee creates 2 account for a customer",
+        "description": "",
+        "id": "end-to-end-test;employee-creates-2-account-for-a-customer;data-needed-for-account-creation;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2099772000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "employee click my operations menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeClickMyOperationsMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4104767000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "employee click manage accounts option",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeClickManageAccountsOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1639796000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "employee click create a new account",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeClickCreateANewAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3174361000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "employee provide description \"checking account for\" with \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"checking account for\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 57
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeProvideDescriptionWith(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2100437000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "employee provide balance \"20000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"20000\"",
+                  "offset": 25
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeProvideBalance(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2103248000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "employee provide accountType \"CHECKING\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CHECKING\"",
+                  "offset": 29
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeProvideAccountType(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2257240000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "employee select create date",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeSelectCreateDate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2177174000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "employee click save button",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeClickSaveButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3313902000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "account creation is successful message should be seen",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.accountCreationIsSuccessfulMessageShouldBeSeen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@endtoend"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigates to register page of gmi bank application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3572196000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage \"homepage_qa_url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"homepage_qa_url\"",
+                  "offset": 31
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-19T01:25:11.919Z",
+        "line": 71,
+        "name": "employee creates 2 account for a customer",
+        "description": "",
+        "id": "end-to-end-test;employee-creates-2-account-for-a-customer;data-needed-for-account-creation;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2101253000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "employee click my operations menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeClickMyOperationsMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4093760000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "employee click manage accounts option",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeClickManageAccountsOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 538060000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "employee click create a new account",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeClickCreateANewAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3169856000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "employee provide description \"saving account for\" with \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"saving account for\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 55
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeProvideDescriptionWith(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2097490000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "employee provide balance \"10000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10000\"",
+                  "offset": 25
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeProvideBalance(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2110066000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "employee provide accountType \"SAVING\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SAVING\"",
+                  "offset": 29
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeProvideAccountType(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2107533000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "employee select create date",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeSelectCreateDate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2090645000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "employee click save button",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeClickSaveButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3366312000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "account creation is successful message should be seen",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.accountCreationIsSuccessfulMessageShouldBeSeen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@endtoend"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigates to register page of gmi bank application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3732706000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage \"homepage_qa_url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"homepage_qa_url\"",
+                  "offset": 31
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-19T01:25:37.198Z",
+        "line": 90,
+        "name": "employee assign 2 accounts to a customer",
+        "description": "",
+        "id": "end-to-end-test;employee-assign-2-accounts-to-a-customer;data-needed-for-connecting-accounts-to-customer;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2104083000,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "employee click my operations menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerAccountStepDefinitions.employeeClickMyOperationsMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4113368000,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "employee click manage customers option",
+            "match": {
+              "location": "gmibank.stepdefinitions.ManageCustomerStepDefinitions.employeeClickManageCustomersOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1150265000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "employee click create a new customer",
+            "match": {
+              "location": "gmibank.stepdefinitions.ManageCustomerStepDefinitions.employeeClickCreateANewCustomer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3287538000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "employee provide customer ssn",
+            "match": {
+              "location": "gmibank.stepdefinitions.ManageCustomerStepDefinitions.employeeProvideCustomerSsn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88974000,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "employee click search button",
+            "match": {
+              "location": "gmibank.stepdefinitions.ManageCustomerStepDefinitions.employeeClickSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2092262000,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "employee provide middle initial \"A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"A\"",
+                  "offset": 32
+                }
+              ],
+              "location": "gmibank.stepdefinitions.ManageCustomerStepDefinitions.employeeProvideMiddleInitial(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2121918000,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "employee provide phoneNumber \"123-123-1212\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123-123-1212\"",
+                  "offset": 29
+                }
+              ],
+              "location": "gmibank.stepdefinitions.ManageCustomerStepDefinitions.employeeProvidePhoneNumber(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2095520000,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "employee provide zipcode \"98765\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"98765\"",
+                  "offset": 25
+                }
+              ],
+              "location": "gmibank.stepdefinitions.ManageCustomerStepDefinitions.employeeProvideZipcode(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2123897000,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "employee provide city \"Los Angeles\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Los Angeles\"",
+                  "offset": 22
+                }
+              ],
+              "location": "gmibank.stepdefinitions.ManageCustomerStepDefinitions.employeeProvideCity(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3283413000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "employee pick accounts",
+            "match": {
+              "location": "gmibank.stepdefinitions.ManageCustomerStepDefinitions.employeePickAccounts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2248251000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "employee clicks save button",
+            "match": {
+              "location": "gmibank.stepdefinitions.ManageCustomerStepDefinitions.employeeClicksSaveButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1088000,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "successful message should be seen",
+            "match": {
+              "location": "gmibank.stepdefinitions.ManageCustomerStepDefinitions.successfulMessageShouldBeSeen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 157873000,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "employee should log out",
+            "match": {
+              "location": "gmibank.stepdefinitions.ManageCustomerStepDefinitions.employeeShouldLogOut()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@endtoend"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigates to register page of gmi bank application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3268919000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage \"homepage_qa_url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"homepage_qa_url\"",
+                  "offset": 31
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-19T01:26:05.936Z",
+        "line": 101,
+        "name": "user sign in",
+        "description": "",
+        "id": "end-to-end-test;user-sign-in;user-sign-in-data;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 276797000,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "user navigates to sign in page",
+            "match": {
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userNavigatesToSignInPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2050672000,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "user enter username \"team46test5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team46test5\"",
+                  "offset": 20
+                }
+              ],
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userEnterUsername(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2093133000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "user enter password \"Asdf123?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Asdf123?\"",
+                  "offset": 20
+                }
+              ],
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userEnterPassword(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3073503000,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userClicksSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28069000,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "user should be on the home page with \"Mehmet kaya\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mehmet kaya\"",
+                  "offset": 37
+                }
+              ],
+              "location": "gmibank.stepdefinitions.userSignInStepDefinitions.userShouldBeOnTheHomePageWith(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@endtoend"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User navigates to register page of gmi bank application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3320128000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should be on the homepage \"homepage_qa_url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"homepage_qa_url\"",
+                  "offset": 31
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerCreationStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-19T01:26:16.755Z",
+        "line": 114,
+        "name": "User performs every steps to transfer money between user\u0027s accounts",
+        "description": "",
+        "id": "end-to-end-test;user-performs-every-steps-to-transfer-money-between-user-s-accounts;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4168773000,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "User navigates My Account page",
+            "match": {
+              "location": "gmibank.stepdefinitions.MoneyTransferStepDefinitions.userNavigatesMyAccountPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2087237000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "User gets the info about users accounts balance",
+            "match": {
+              "location": "gmibank.stepdefinitions.MoneyTransferStepDefinitions.userGetsTheInfoAboutUsersAccountsBalance()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3227747000,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "User navigates to Transfer Money Page",
+            "match": {
+              "location": "gmibank.stepdefinitions.MoneyTransferStepDefinitions.userNavigatesToTransferMoneyPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6686706000,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "User performs the money transfer \"50\" \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"50\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"10\"",
+                  "offset": 38
+                }
+              ],
+              "location": "gmibank.stepdefinitions.MoneyTransferStepDefinitions.userPerformsTheMoneyTransfer(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1115101000,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "User navigates My Accounts Page",
+            "match": {
+              "location": "gmibank.stepdefinitions.MoneyTransferStepDefinitions.userNavigatesMyAccountsPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2162050000,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "User validates that User $ money transferred successfully",
+            "match": {
+              "location": "gmibank.stepdefinitions.MoneyTransferStepDefinitions.userValidatesThatUser$MoneyTransferredSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@endtoend"
           }
         ]
       }
     ],
-    "name": "Customer API Validation",
+    "name": "end-to-end test",
     "description": "",
-    "id": "customer-api-validation",
+    "id": "end-to-end-test",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_021.feature",
+    "uri": "file:src/test/resources/features/endtoend.feature",
     "tags": []
   }
 ]
