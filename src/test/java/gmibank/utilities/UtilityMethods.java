@@ -152,6 +152,7 @@ public class UtilityMethods {
     }
     public static String parseToken(String token){
         String resultToken = token.split("\"")[3];
+        ConstantVariables.generalToken = resultToken;
         return resultToken;
     }
     public static List<String> returnAllStatesIdList (String filePath) {

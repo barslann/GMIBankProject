@@ -19,7 +19,7 @@ Feature: end-to-end test
     And  User successful message should be seen "Registration saved! Please check your email for confirmation."
     Examples: Valid user creation credentials
     |SSN| firstName|lastName|address|phoneNumber|userName|email|newPassword|newPasswordConfirmation|
-    |123-12-9971|Mehmet|Kaya  |123 5th aven| 123-456-7890|team46test8|team46test8@gmail.com|Asdf123?|Asdf123?    |
+    |123-12-9969|Mehmet|Kaya  |123 5th aven| 123-456-7890|team46test10|team46test10@gmail.com|Asdf123?|Asdf123?    |
 
 
   @endtoend
@@ -98,7 +98,7 @@ Feature: end-to-end test
     Then user should be on the home page with "<userName>"
     Examples: user sign in data
       |username| password|userName|
-      |team46test5| Asdf123?| Mehmet kaya|
+      |team46test10| Asdf123?| Mehmet kaya|
 #    |laurine.wiza| a1STEM!ilg%!0C|Tommie Runolfsson|
 
   @endtoend

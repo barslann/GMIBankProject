@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13743363000,
+              "duration": 15199794000,
               "status": "passed"
             },
             "line": 4,
@@ -30,7 +30,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-19T01:23:30.139Z",
+        "start_timestamp": "2021-06-19T20:19:15.801Z",
         "line": 22,
         "name": "Customer creation",
         "description": "",
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1236700000,
+              "duration": 1332683000,
               "status": "passed"
             },
             "line": 8,
@@ -52,15 +52,15 @@
           },
           {
             "result": {
-              "duration": 2724704000,
+              "duration": 2768972000,
               "status": "passed"
             },
             "line": 9,
-            "name": "User provide SSN \"123-12-9971\"",
+            "name": "User provide SSN \"123-12-9969\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"123-12-9971\"",
+                  "val": "\"123-12-9969\"",
                   "offset": 17
                 }
               ],
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 2121765000,
+              "duration": 2125870000,
               "status": "passed"
             },
             "line": 10,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 2171276000,
+              "duration": 2178499000,
               "status": "passed"
             },
             "line": 11,
@@ -106,7 +106,7 @@
           },
           {
             "result": {
-              "duration": 2488578000,
+              "duration": 2452850000,
               "status": "passed"
             },
             "line": 12,
@@ -124,7 +124,7 @@
           },
           {
             "result": {
-              "duration": 2150009000,
+              "duration": 2155893000,
               "status": "passed"
             },
             "line": 13,
@@ -142,15 +142,15 @@
           },
           {
             "result": {
-              "duration": 2104198000,
+              "duration": 2108720000,
               "status": "passed"
             },
             "line": 14,
-            "name": "User provide userName \"team46test8\"",
+            "name": "User provide userName \"team46test10\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"team46test8\"",
+                  "val": "\"team46test10\"",
                   "offset": 22
                 }
               ],
@@ -160,15 +160,15 @@
           },
           {
             "result": {
-              "duration": 2354540000,
+              "duration": 2361560000,
               "status": "passed"
             },
             "line": 15,
-            "name": "User provide email \"team46test8@gmail.com\"",
+            "name": "User provide email \"team46test10@gmail.com\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"team46test8@gmail.com\"",
+                  "val": "\"team46test10@gmail.com\"",
                   "offset": 19
                 }
               ],
@@ -178,7 +178,7 @@
           },
           {
             "result": {
-              "duration": 2181256000,
+              "duration": 2198408000,
               "status": "passed"
             },
             "line": 16,
@@ -196,7 +196,7 @@
           },
           {
             "result": {
-              "duration": 2171757000,
+              "duration": 2143396000,
               "status": "passed"
             },
             "line": 17,
@@ -214,7 +214,7 @@
           },
           {
             "result": {
-              "duration": 2386543000,
+              "duration": 2393903000,
               "status": "passed"
             },
             "line": 18,
@@ -226,7 +226,7 @@
           },
           {
             "result": {
-              "duration": 44751000,
+              "duration": 51492000,
               "status": "passed"
             },
             "line": 19,
@@ -258,7 +258,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3781167000,
+              "duration": 3942854000,
               "status": "passed"
             },
             "line": 4,
@@ -277,7 +277,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-19T01:24:08.258Z",
+        "start_timestamp": "2021-06-19T20:19:55.502Z",
         "line": 34,
         "name": "user sign in",
         "description": "",
@@ -287,7 +287,7 @@
         "steps": [
           {
             "result": {
-              "duration": 283089000,
+              "duration": 277008000,
               "status": "passed"
             },
             "line": 27,
@@ -299,7 +299,7 @@
           },
           {
             "result": {
-              "duration": 2063047000,
+              "duration": 2063963000,
               "status": "passed"
             },
             "line": 28,
@@ -317,7 +317,7 @@
           },
           {
             "result": {
-              "duration": 2100509000,
+              "duration": 2106189000,
               "status": "passed"
             },
             "line": 29,
@@ -335,7 +335,7 @@
           },
           {
             "result": {
-              "duration": 3279746000,
+              "duration": 3296921000,
               "status": "passed"
             },
             "line": 30,
@@ -347,7 +347,7 @@
           },
           {
             "result": {
-              "duration": 34869000,
+              "duration": 44937000,
               "status": "passed"
             },
             "line": 31,
@@ -379,7 +379,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3522892000,
+              "duration": 3510513000,
               "status": "passed"
             },
             "line": 4,
@@ -398,7 +398,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-19T01:24:19.860Z",
+        "start_timestamp": "2021-06-19T20:20:07.287Z",
         "line": 38,
         "name": "Admin activates user",
         "description": "",
@@ -408,7 +408,7 @@
         "steps": [
           {
             "result": {
-              "duration": 120334000,
+              "duration": 116593000,
               "status": "passed"
             },
             "line": 39,
@@ -420,7 +420,7 @@
           },
           {
             "result": {
-              "duration": 2079036000,
+              "duration": 2080879000,
               "status": "passed"
             },
             "line": 40,
@@ -432,7 +432,7 @@
           },
           {
             "result": {
-              "duration": 3456251000,
+              "duration": 3485999000,
               "status": "passed"
             },
             "line": 41,
@@ -444,7 +444,7 @@
           },
           {
             "result": {
-              "duration": 5272164000,
+              "duration": 5291272000,
               "status": "passed"
             },
             "line": 42,
@@ -456,7 +456,7 @@
           },
           {
             "result": {
-              "duration": 36924000,
+              "duration": 43259000,
               "status": "passed"
             },
             "line": 43,
@@ -474,7 +474,7 @@
           },
           {
             "result": {
-              "duration": 311513000,
+              "duration": 405559000,
               "status": "passed"
             },
             "line": 44,
@@ -500,7 +500,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3366525000,
+              "duration": 3341678000,
               "status": "passed"
             },
             "line": 4,
@@ -519,7 +519,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-19T01:24:34.704Z",
+        "start_timestamp": "2021-06-19T20:20:22.284Z",
         "line": 55,
         "name": "user sign in",
         "description": "",
@@ -529,7 +529,7 @@
         "steps": [
           {
             "result": {
-              "duration": 188483000,
+              "duration": 219055000,
               "status": "passed"
             },
             "line": 48,
@@ -541,7 +541,7 @@
           },
           {
             "result": {
-              "duration": 2058091000,
+              "duration": 2064039000,
               "status": "passed"
             },
             "line": 49,
@@ -559,7 +559,7 @@
           },
           {
             "result": {
-              "duration": 2088423000,
+              "duration": 2095616000,
               "status": "passed"
             },
             "line": 50,
@@ -577,7 +577,7 @@
           },
           {
             "result": {
-              "duration": 3084209000,
+              "duration": 3082184000,
               "status": "passed"
             },
             "line": 51,
@@ -589,7 +589,7 @@
           },
           {
             "result": {
-              "duration": 41505000,
+              "duration": 40339000,
               "status": "passed"
             },
             "line": 52,
@@ -621,7 +621,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3347753000,
+              "duration": 3342937000,
               "status": "passed"
             },
             "line": 4,
@@ -640,7 +640,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-19T01:24:45.566Z",
+        "start_timestamp": "2021-06-19T20:20:33.156Z",
         "line": 70,
         "name": "employee creates 2 account for a customer",
         "description": "",
@@ -650,7 +650,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2099772000,
+              "duration": 2122299000,
               "status": "passed"
             },
             "line": 59,
@@ -662,7 +662,7 @@
           },
           {
             "result": {
-              "duration": 4104767000,
+              "duration": 4116171000,
               "status": "passed"
             },
             "line": 60,
@@ -674,7 +674,7 @@
           },
           {
             "result": {
-              "duration": 1639796000,
+              "duration": 1669260000,
               "status": "passed"
             },
             "line": 61,
@@ -686,7 +686,7 @@
           },
           {
             "result": {
-              "duration": 3174361000,
+              "duration": 3177503000,
               "status": "passed"
             },
             "line": 62,
@@ -708,7 +708,7 @@
           },
           {
             "result": {
-              "duration": 2100437000,
+              "duration": 2108341000,
               "status": "passed"
             },
             "line": 63,
@@ -726,7 +726,7 @@
           },
           {
             "result": {
-              "duration": 2103248000,
+              "duration": 2093847000,
               "status": "passed"
             },
             "line": 64,
@@ -744,7 +744,7 @@
           },
           {
             "result": {
-              "duration": 2257240000,
+              "duration": 2276588000,
               "status": "passed"
             },
             "line": 65,
@@ -756,7 +756,7 @@
           },
           {
             "result": {
-              "duration": 2177174000,
+              "duration": 2188385000,
               "status": "passed"
             },
             "line": 66,
@@ -768,7 +768,7 @@
           },
           {
             "result": {
-              "duration": 3313902000,
+              "duration": 3524552000,
               "status": "passed"
             },
             "line": 67,
@@ -794,7 +794,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3572196000,
+              "duration": 3875948000,
               "status": "passed"
             },
             "line": 4,
@@ -813,7 +813,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-19T01:25:11.919Z",
+        "start_timestamp": "2021-06-19T20:20:59.802Z",
         "line": 71,
         "name": "employee creates 2 account for a customer",
         "description": "",
@@ -823,7 +823,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2101253000,
+              "duration": 2093243000,
               "status": "passed"
             },
             "line": 59,
@@ -835,7 +835,7 @@
           },
           {
             "result": {
-              "duration": 4093760000,
+              "duration": 4088697000,
               "status": "passed"
             },
             "line": 60,
@@ -847,7 +847,7 @@
           },
           {
             "result": {
-              "duration": 538060000,
+              "duration": 539689000,
               "status": "passed"
             },
             "line": 61,
@@ -859,7 +859,7 @@
           },
           {
             "result": {
-              "duration": 3169856000,
+              "duration": 3179374000,
               "status": "passed"
             },
             "line": 62,
@@ -881,7 +881,7 @@
           },
           {
             "result": {
-              "duration": 2097490000,
+              "duration": 2088528000,
               "status": "passed"
             },
             "line": 63,
@@ -899,7 +899,7 @@
           },
           {
             "result": {
-              "duration": 2110066000,
+              "duration": 2123727000,
               "status": "passed"
             },
             "line": 64,
@@ -917,7 +917,7 @@
           },
           {
             "result": {
-              "duration": 2107533000,
+              "duration": 2097320000,
               "status": "passed"
             },
             "line": 65,
@@ -929,7 +929,7 @@
           },
           {
             "result": {
-              "duration": 2090645000,
+              "duration": 2097891000,
               "status": "passed"
             },
             "line": 66,
@@ -941,7 +941,7 @@
           },
           {
             "result": {
-              "duration": 3366312000,
+              "duration": 3414727000,
               "status": "passed"
             },
             "line": 67,
@@ -967,7 +967,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3732706000,
+              "duration": 3591120000,
               "status": "passed"
             },
             "line": 4,
@@ -986,7 +986,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-19T01:25:37.198Z",
+        "start_timestamp": "2021-06-19T20:21:25.437Z",
         "line": 90,
         "name": "employee assign 2 accounts to a customer",
         "description": "",
@@ -996,7 +996,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2104083000,
+              "duration": 2097284000,
               "status": "passed"
             },
             "line": 75,
@@ -1008,7 +1008,7 @@
           },
           {
             "result": {
-              "duration": 4113368000,
+              "duration": 4101367000,
               "status": "passed"
             },
             "line": 76,
@@ -1020,7 +1020,7 @@
           },
           {
             "result": {
-              "duration": 1150265000,
+              "duration": 1155135000,
               "status": "passed"
             },
             "line": 77,
@@ -1032,7 +1032,7 @@
           },
           {
             "result": {
-              "duration": 3287538000,
+              "duration": 3304981000,
               "status": "passed"
             },
             "line": 78,
@@ -1044,7 +1044,7 @@
           },
           {
             "result": {
-              "duration": 88974000,
+              "duration": 91823000,
               "status": "passed"
             },
             "line": 79,
@@ -1056,7 +1056,7 @@
           },
           {
             "result": {
-              "duration": 2092262000,
+              "duration": 2082591000,
               "status": "passed"
             },
             "line": 80,
@@ -1074,7 +1074,7 @@
           },
           {
             "result": {
-              "duration": 2121918000,
+              "duration": 2126550000,
               "status": "passed"
             },
             "line": 81,
@@ -1092,7 +1092,7 @@
           },
           {
             "result": {
-              "duration": 2095520000,
+              "duration": 2096030000,
               "status": "passed"
             },
             "line": 82,
@@ -1110,7 +1110,7 @@
           },
           {
             "result": {
-              "duration": 2123897000,
+              "duration": 2122044000,
               "status": "passed"
             },
             "line": 83,
@@ -1128,7 +1128,7 @@
           },
           {
             "result": {
-              "duration": 3283413000,
+              "duration": 3298932000,
               "status": "passed"
             },
             "line": 84,
@@ -1140,7 +1140,7 @@
           },
           {
             "result": {
-              "duration": 2248251000,
+              "duration": 2272600000,
               "status": "passed"
             },
             "line": 85,
@@ -1152,7 +1152,7 @@
           },
           {
             "result": {
-              "duration": 1088000,
+              "duration": 474000,
               "status": "passed"
             },
             "line": 86,
@@ -1164,7 +1164,7 @@
           },
           {
             "result": {
-              "duration": 157873000,
+              "duration": 172969000,
               "status": "passed"
             },
             "line": 87,
@@ -1190,7 +1190,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3268919000,
+              "duration": 3350480000,
               "status": "passed"
             },
             "line": 4,
@@ -1209,7 +1209,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-19T01:26:05.936Z",
+        "start_timestamp": "2021-06-19T20:21:53.983Z",
         "line": 101,
         "name": "user sign in",
         "description": "",
@@ -1219,7 +1219,7 @@
         "steps": [
           {
             "result": {
-              "duration": 276797000,
+              "duration": 251308000,
               "status": "passed"
             },
             "line": 94,
@@ -1231,15 +1231,15 @@
           },
           {
             "result": {
-              "duration": 2050672000,
+              "duration": 2047874000,
               "status": "passed"
             },
             "line": 95,
-            "name": "user enter username \"team46test5\"",
+            "name": "user enter username \"team46test10\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"team46test5\"",
+                  "val": "\"team46test10\"",
                   "offset": 20
                 }
               ],
@@ -1249,7 +1249,7 @@
           },
           {
             "result": {
-              "duration": 2093133000,
+              "duration": 2093767000,
               "status": "passed"
             },
             "line": 96,
@@ -1267,7 +1267,7 @@
           },
           {
             "result": {
-              "duration": 3073503000,
+              "duration": 3089409000,
               "status": "passed"
             },
             "line": 97,
@@ -1279,8 +1279,9 @@
           },
           {
             "result": {
-              "duration": 28069000,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected [Mehmet kaya] but found [Mehmet Kaya]\n\tat org.testng.Assert.fail(Assert.java:97)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\n\tat org.testng.Assert.assertEquals(Assert.java:118)\n\tat org.testng.Assert.assertEquals(Assert.java:575)\n\tat org.testng.Assert.assertEquals(Assert.java:585)\n\tat gmibank.stepdefinitions.userSignInStepDefinitions.userShouldBeOnTheHomePageWith(userSignInStepDefinitions.java:45)\n\tat ✽.user should be on the home page with \"Mehmet kaya\"(file:///Users/coderman/Desktop/GMIBankFramework/src/test/resources/features/endtoend.feature:98)\n",
+              "duration": 48043000,
+              "status": "failed"
             },
             "line": 98,
             "name": "user should be on the home page with \"Mehmet kaya\"",
@@ -1311,7 +1312,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3320128000,
+              "duration": 3389977000,
               "status": "passed"
             },
             "line": 4,
@@ -1330,7 +1331,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-19T01:26:16.755Z",
+        "start_timestamp": "2021-06-19T20:22:04.948Z",
         "line": 114,
         "name": "User performs every steps to transfer money between user\u0027s accounts",
         "description": "",
@@ -1340,7 +1341,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4168773000,
+              "duration": 4191749000,
               "status": "passed"
             },
             "line": 106,
@@ -1352,7 +1353,7 @@
           },
           {
             "result": {
-              "duration": 2087237000,
+              "duration": 2086490000,
               "status": "passed"
             },
             "line": 107,
@@ -1364,7 +1365,7 @@
           },
           {
             "result": {
-              "duration": 3227747000,
+              "duration": 3225943000,
               "status": "passed"
             },
             "line": 108,
@@ -1376,7 +1377,7 @@
           },
           {
             "result": {
-              "duration": 6686706000,
+              "duration": 6742461000,
               "status": "passed"
             },
             "line": 109,
@@ -1398,7 +1399,7 @@
           },
           {
             "result": {
-              "duration": 1115101000,
+              "duration": 1119286000,
               "status": "passed"
             },
             "line": 110,
@@ -1410,7 +1411,7 @@
           },
           {
             "result": {
-              "duration": 2162050000,
+              "duration": 2157326000,
               "status": "passed"
             },
             "line": 111,

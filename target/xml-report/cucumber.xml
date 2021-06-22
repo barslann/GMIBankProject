@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="189.891">
-    <testcase classname="end-to-end test" name="Customer creation" time="38.055">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="192.636">
+    <testcase classname="end-to-end test" name="Customer creation" time="39.636">
         <system-out>
             <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
 When user navigates to register page........................................passed
-Then User provide SSN "123-12-9971".........................................passed
+Then User provide SSN "123-12-9969".........................................passed
 Then User provide firstName "Mehmet"........................................passed
 Then User provide lastName "Kaya"...........................................passed
 Then User provide address "123 5th aven"....................................passed
 Then User provide phoneNumber "123-456-7890"................................passed
-Then User provide userName "team46test8"....................................passed
-Then User provide email "team46test8@gmail.com".............................passed
+Then User provide userName "team46test10"...................................passed
+Then User provide email "team46test10@gmail.com"............................passed
 Then User provide newPassword "Asdf123?"....................................passed
 Then User provide newPasswordConfirmation "Asdf123?"........................passed
 Then User clicks register button............................................passed
@@ -18,7 +18,7 @@ And User successful message should be seen "Registration saved! Please check you
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="end-to-end test" name="user sign in" time="11.566">
+    <testcase classname="end-to-end test" name="user sign in" time="11.755">
         <system-out>
             <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
 When user navigates to sign in page.........................................passed
@@ -29,7 +29,7 @@ Then user should be on the home page with "team46 Admin"....................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="end-to-end test" name="Admin activates user" time="14.815">
+    <testcase classname="end-to-end test" name="Admin activates user" time="14.958">
         <system-out>
             <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
 When admin clicks the administration menu...................................passed
@@ -41,7 +41,7 @@ Then admin should log out...................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="end-to-end test" name="user sign in" time="10.844">
+    <testcase classname="end-to-end test" name="user sign in" time="10.851">
         <system-out>
             <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
 When user navigates to sign in page.........................................passed
@@ -52,7 +52,7 @@ Then user should be on the home page with "team46 Employee".................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="end-to-end test" name="employee creates 2 account for a customer" time="26.329">
+    <testcase classname="end-to-end test" name="employee creates 2 account for a customer" time="26.628">
         <system-out>
             <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
 When employee click my operations menu......................................passed
@@ -67,7 +67,7 @@ Then account creation is successful message should be seen..................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="end-to-end test" name="employee creates 2 account for a customer 2" time="25.259">
+    <testcase classname="end-to-end test" name="employee creates 2 account for a customer 2" time="25.622">
         <system-out>
             <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
 When employee click my operations menu......................................passed
@@ -82,7 +82,7 @@ Then account creation is successful message should be seen..................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="end-to-end test" name="employee assign 2 accounts to a customer" time="28.611">
+    <testcase classname="end-to-end test" name="employee assign 2 accounts to a customer" time="28.523">
         <system-out>
             <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
 When employee click my operations menu......................................passed
@@ -101,18 +101,28 @@ And employee should log out.................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="end-to-end test" name="user sign in" time="10.799">
-        <system-out>
+    <testcase classname="end-to-end test" name="user sign in" time="10.899">
+        <failure message="expected [Mehmet kaya] but found [Mehmet Kaya]" type="java.lang.AssertionError">
             <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
 When user navigates to sign in page.........................................passed
-Then user enter username "team46test5"......................................passed
+Then user enter username "team46test10".....................................passed
 Then user enter password "Asdf123?".........................................passed
 Then user clicks sign in button.............................................passed
-Then user should be on the home page with "Mehmet kaya".....................passed
+Then user should be on the home page with "Mehmet kaya".....................failed
+
+StackTrace:
+java.lang.AssertionError: expected [Mehmet kaya] but found [Mehmet Kaya]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at gmibank.stepdefinitions.userSignInStepDefinitions.userShouldBeOnTheHomePageWith(userSignInStepDefinitions.java:45)
+	at ✽.user should be on the home page with "Mehmet kaya"(file:///Users/coderman/Desktop/GMIBankFramework/src/test/resources/features/endtoend.feature:98)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="end-to-end test" name="User performs every steps to transfer money between user's accounts" time="22.771">
+    <testcase classname="end-to-end test" name="User performs every steps to transfer money between user's accounts" time="22.923">
         <system-out>
             <![CDATA[Given user should be on the homepage "homepage_qa_url"......................passed
 When User navigates My Account page.........................................passed

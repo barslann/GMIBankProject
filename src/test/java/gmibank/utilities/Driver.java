@@ -25,7 +25,7 @@ import static org.testng.AssertJUnit.assertTrue;
 public class Driver {
     private Driver() {
     }
-    static private WebDriver driver;
+    private static WebDriver driver;
     public static WebDriver get() {
         if (driver == null) {
             switch (ConfigurationReader.getProperty("browser")) {

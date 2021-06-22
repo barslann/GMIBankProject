@@ -10,6 +10,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import static io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.Assert;
 
@@ -41,7 +42,7 @@ public class US_024_StepDefinitions {
     public void userCreatesAStateFromApiUsing(String url) throws JsonProcessingException {
         System.out.println("yeni state olusturulup post edilicek");
         State state = new State();
-        state.setName("maryland");
+        state.setName("Moon");
 
 //        ObjectMapper mapper = new ObjectMapper();
 //        String jsonString = mapper.writeValueAsString(state);
@@ -63,6 +64,8 @@ public class US_024_StepDefinitions {
 
     @Then("User validates that state is created")
     public void userValidatesThatStateIsCreated() {
-
+        JsonPath jsonPath = response.jsonPath();
+        String  actualName = jsonPath.get("name");
+        Assert.assertTrue(actualName.contains("Moon"));
     }
 }
