@@ -89,7 +89,7 @@ INSERT INTO tp_country(id, name) VALUES (9654,'')]]></console>
           <database value="gmibank_db" />
           <type value="USER_PASSWORD" />
           <user value="techprodb_user" />
-          <deprecated-pwd value="" />
+          <deprecated-pwd value="VGVjaHByb19AMTI2" />
         </database>
         <properties>
           <auto-commit value="false" />

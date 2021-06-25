@@ -1,5 +1,7 @@
 package gmibank.utilities;
 
+import gmibank.pojo.CountryModel;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -97,7 +99,7 @@ public class DBUtils {
         }
         return resultSet;
     }
-    //Table da kac satir var
+    //Table da kac saattir var
     public static int getRowCount() throws Exception {
         resultSet.last();
         int rowCount = resultSet.getRow();
@@ -150,6 +152,30 @@ public class DBUtils {
         }
         return rowList;
     }
+
+    public static List<CountryModel> getQueryResultList2(String query) {
+        executeQuery(query);
+        List<CountryModel> rowList = new ArrayList<>();
+        ResultSetMetaData rsmd;
+        try {
+            rsmd = resultSet.getMetaData();
+            while (resultSet.next()) {
+                rowList.add(new CountryModel((long)resultSet.getObject(1),(String)resultSet.getObject(2)));
+            }
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return rowList;
+    }
+    /*
+    *  row = {22346,Kenya}
+    *  row = {22347,Kenya}
+    *
+    *
+    * rowlist = {{22346,Kenya},{22347,Kenya}}
+    *
+    * */
     /**
      * @return list of values of a single column from the result set
      */
@@ -210,4 +236,16 @@ public class DBUtils {
         }
         return columns;
     }
+
+    public static void main(String[] args) {
+        DBUtils.createConnection("jdbc:postgresql://157.230.48.97:5432/gmibank_db","techprodb_user","Techpro_@126");
+
+
+        System.out.println(getQueryResultList("Select * from tp_country"));
+
+
+        System.out.println(getQueryResultList2("Select * from tp_country"));
+
+    }
 }
+

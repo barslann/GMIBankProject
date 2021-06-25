@@ -8,6 +8,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
+
 public class US_027_StepDefinitions {
     public Response response;
     public String uriPath ="";
@@ -21,7 +22,6 @@ public class US_027_StepDefinitions {
                 .then()
                 .statusCode(204)
                 .extract().response();
-//        response.prettyPrint();
     }
 
     @Then("User validates that state is deleted")
@@ -33,4 +33,5 @@ public class US_027_StepDefinitions {
                 .statusCode(404)
                 .extract().response();
     }
+
 }
